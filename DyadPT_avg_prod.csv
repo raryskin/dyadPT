@@ -1,0 +1,457 @@
+pair,speaker,condition,prop_size_adj_use,num_trials,num_NA
+3,5,No Contrast,0,16,0
+3,5,One Contrast Privileged,0.0625,16,0
+3,5,Two Contrasts Shared,1,32,0
+3,6,No Contrast,0,16,0
+3,6,One Contrast Privileged,0.9375,16,0
+3,6,Two Contrasts Shared,1,32,1
+4,7,No Contrast,0.0625,16,0
+4,7,One Contrast Privileged,0.9333333333333333,16,1
+4,7,Two Contrasts Shared,1,32,1
+4,8,No Contrast,0,16,0
+4,8,One Contrast Privileged,1,16,0
+4,8,Two Contrasts Shared,1,32,0
+5,9,No Contrast,0.0625,16,0
+5,9,One Contrast Privileged,0.8125,16,0
+5,9,Two Contrasts Shared,1,32,0
+5,10,No Contrast,0.3125,16,0
+5,10,One Contrast Privileged,1,16,0
+5,10,Two Contrasts Shared,0.9375,32,0
+6,11,No Contrast,0,16,0
+6,11,One Contrast Privileged,1,16,0
+6,11,Two Contrasts Shared,1,32,0
+6,12,No Contrast,0,16,0
+6,12,One Contrast Privileged,0.8125,16,0
+6,12,Two Contrasts Shared,1,32,0
+7,13,No Contrast,0,16,0
+7,13,One Contrast Privileged,0.9375,16,0
+7,13,Two Contrasts Shared,1,32,0
+7,14,No Contrast,0,16,0
+7,14,One Contrast Privileged,0.125,16,0
+7,14,Two Contrasts Shared,1,32,0
+8,15,No Contrast,0.125,16,0
+8,15,One Contrast Privileged,0.875,16,0
+8,15,Two Contrasts Shared,1,32,0
+8,16,No Contrast,0.125,16,0
+8,16,One Contrast Privileged,1,16,0
+8,16,Two Contrasts Shared,1,32,0
+9,17,No Contrast,0.375,16,0
+9,17,One Contrast Privileged,0.8125,16,0
+9,17,Two Contrasts Shared,0.96875,32,0
+9,18,No Contrast,0.125,16,0
+9,18,One Contrast Privileged,1,16,0
+9,18,Two Contrasts Shared,1,32,0
+10,19,No Contrast,0,16,0
+10,19,One Contrast Privileged,1,16,0
+10,19,Two Contrasts Shared,1,32,0
+10,20,No Contrast,0,16,0
+10,20,One Contrast Privileged,0.8666666666666667,16,1
+10,20,Two Contrasts Shared,0.96875,32,0
+11,21,No Contrast,0.0625,16,0
+11,21,One Contrast Privileged,0.875,16,0
+11,21,Two Contrasts Shared,1,32,0
+11,22,No Contrast,0,16,0
+11,22,One Contrast Privileged,0.9375,16,0
+11,22,Two Contrasts Shared,1,32,0
+14,27,No Contrast,0.0625,16,0
+14,27,One Contrast Privileged,0.9375,16,0
+14,27,Two Contrasts Shared,1,32,1
+14,28,No Contrast,0.125,16,0
+14,28,One Contrast Privileged,0.625,16,0
+14,28,Two Contrasts Shared,1,32,0
+15,29,No Contrast,0,16,0
+15,29,One Contrast Privileged,0.125,16,0
+15,29,Two Contrasts Shared,0.9375,32,0
+15,30,No Contrast,0.0625,16,0
+15,30,One Contrast Privileged,0.9375,16,0
+15,30,Two Contrasts Shared,1,32,0
+16,31,No Contrast,0.125,16,0
+16,31,One Contrast Privileged,0.4375,16,0
+16,31,Two Contrasts Shared,1,32,0
+16,32,No Contrast,0,16,0
+16,32,One Contrast Privileged,0.625,16,0
+16,32,Two Contrasts Shared,1,32,0
+18,35,No Contrast,0,16,0
+18,35,One Contrast Privileged,0.4375,16,0
+18,35,Two Contrasts Shared,1,32,0
+18,36,No Contrast,0,16,0
+18,36,One Contrast Privileged,0.0625,16,0
+18,36,Two Contrasts Shared,1,32,1
+19,37,No Contrast,0,16,0
+19,37,One Contrast Privileged,0.3125,16,0
+19,37,Two Contrasts Shared,1,32,0
+19,38,No Contrast,0,16,0
+19,38,One Contrast Privileged,0.9375,16,0
+19,38,Two Contrasts Shared,0.9666666666666667,32,2
+20,39,No Contrast,0.125,16,0
+20,39,One Contrast Privileged,1,16,0
+20,39,Two Contrasts Shared,0.96875,32,0
+20,40,No Contrast,0.0625,16,0
+20,40,One Contrast Privileged,0.0625,16,0
+20,40,Two Contrasts Shared,0.96875,32,0
+21,41,No Contrast,0,16,0
+21,41,One Contrast Privileged,0.4375,16,0
+21,41,Two Contrasts Shared,1,32,0
+21,42,No Contrast,0.0625,16,0
+21,42,One Contrast Privileged,0.1875,16,0
+21,42,Two Contrasts Shared,1,32,0
+22,43,No Contrast,0.375,16,0
+22,43,One Contrast Privileged,1,16,0
+22,43,Two Contrasts Shared,1,32,0
+22,44,No Contrast,0,16,0
+22,44,One Contrast Privileged,0,16,0
+22,44,Two Contrasts Shared,1,32,0
+23,45,No Contrast,0.3125,16,0
+23,45,One Contrast Privileged,0.3125,16,0
+23,45,Two Contrasts Shared,0.96875,32,0
+23,46,No Contrast,0.0625,16,0
+23,46,One Contrast Privileged,0.1875,16,0
+23,46,Two Contrasts Shared,1,32,0
+24,47,No Contrast,0,16,0
+24,47,One Contrast Privileged,1,16,0
+24,47,Two Contrasts Shared,0.96875,32,0
+24,48,No Contrast,0,16,0
+24,48,One Contrast Privileged,1,16,0
+24,48,Two Contrasts Shared,0.96875,32,0
+25,49,No Contrast,0.0625,16,0
+25,49,One Contrast Privileged,0.6875,16,0
+25,49,Two Contrasts Shared,1,32,0
+25,50,No Contrast,0,16,0
+25,50,One Contrast Privileged,0.9375,16,0
+25,50,Two Contrasts Shared,1,32,0
+27,53,No Contrast,0.0625,16,0
+27,53,One Contrast Privileged,0.6875,16,0
+27,53,Two Contrasts Shared,1,32,0
+27,54,No Contrast,0.0625,16,0
+27,54,One Contrast Privileged,0.4375,16,0
+27,54,Two Contrasts Shared,1,32,0
+28,55,No Contrast,0.125,16,0
+28,55,One Contrast Privileged,0.75,16,0
+28,55,Two Contrasts Shared,0.96875,32,0
+28,56,No Contrast,0.1875,16,0
+28,56,One Contrast Privileged,0.1875,16,0
+28,56,Two Contrasts Shared,0.90625,32,0
+30,59,No Contrast,0,16,0
+30,59,One Contrast Privileged,0.375,16,0
+30,59,Two Contrasts Shared,0.967741935483871,32,1
+30,60,No Contrast,0.0625,16,0
+30,60,One Contrast Privileged,1,16,0
+30,60,Two Contrasts Shared,1,32,0
+31,61,No Contrast,0,16,0
+31,61,One Contrast Privileged,0.125,16,0
+31,61,Two Contrasts Shared,0.96875,32,0
+31,62,No Contrast,0.0625,16,0
+31,62,One Contrast Privileged,0.1875,16,0
+31,62,Two Contrasts Shared,1,32,0
+32,63,No Contrast,0,16,0
+32,63,One Contrast Privileged,0.1875,16,0
+32,63,Two Contrasts Shared,0.967741935483871,32,1
+32,64,No Contrast,0.0625,16,0
+32,64,One Contrast Privileged,0.5,16,0
+32,64,Two Contrasts Shared,0.96875,32,0
+33,65,No Contrast,0.0625,16,0
+33,65,One Contrast Privileged,0.8125,16,0
+33,65,Two Contrasts Shared,0.96875,32,0
+33,66,No Contrast,0,16,0
+33,66,One Contrast Privileged,1,16,0
+33,66,Two Contrasts Shared,0.9375,32,0
+34,67,No Contrast,0,16,0
+34,67,One Contrast Privileged,0.1875,16,0
+34,67,Two Contrasts Shared,1,32,0
+34,68,No Contrast,0,16,0
+34,68,One Contrast Privileged,0,16,0
+34,68,Two Contrasts Shared,1,32,0
+35,69,No Contrast,0.5,16,0
+35,69,One Contrast Privileged,1,16,0
+35,69,Two Contrasts Shared,1,32,0
+35,70,No Contrast,0.5625,16,0
+35,70,One Contrast Privileged,0.75,16,0
+35,70,Two Contrasts Shared,1,32,0
+36,72,No Contrast,0.25,16,0
+36,72,One Contrast Privileged,0.75,16,0
+36,72,Two Contrasts Shared,1,32,0
+36,73,No Contrast,0,16,0
+36,73,One Contrast Privileged,0.3125,16,0
+36,73,Two Contrasts Shared,0.96875,32,0
+38,76,No Contrast,0.375,16,0
+38,76,One Contrast Privileged,0.875,16,0
+38,76,Two Contrasts Shared,0.96875,32,0
+38,77,No Contrast,0.625,16,0
+38,77,One Contrast Privileged,1,16,0
+38,77,Two Contrasts Shared,1,32,0
+39,78,No Contrast,0.06666666666666667,16,1
+39,78,One Contrast Privileged,1,16,0
+39,78,Two Contrasts Shared,0.96875,32,0
+39,79,No Contrast,0,16,0
+39,79,One Contrast Privileged,0.5625,16,0
+39,79,Two Contrasts Shared,1,32,0
+41,82,No Contrast,0.0625,16,0
+41,82,One Contrast Privileged,0.4375,16,0
+41,82,Two Contrasts Shared,1,32,0
+41,83,No Contrast,0,16,1
+41,83,One Contrast Privileged,1,16,0
+41,83,Two Contrasts Shared,1,32,1
+42,84,No Contrast,0,16,0
+42,84,One Contrast Privileged,0.1875,16,0
+42,84,Two Contrasts Shared,1,32,0
+42,85,No Contrast,0,16,0
+42,85,One Contrast Privileged,0.1875,16,0
+42,85,Two Contrasts Shared,1,32,0
+43,86,No Contrast,0,16,0
+43,86,One Contrast Privileged,0.1875,16,0
+43,86,Two Contrasts Shared,0.96875,32,0
+43,87,No Contrast,0.0625,16,0
+43,87,One Contrast Privileged,0.75,16,0
+43,87,Two Contrasts Shared,1,32,0
+44,88,No Contrast,0,16,0
+44,88,One Contrast Privileged,1,16,0
+44,88,Two Contrasts Shared,0.9375,32,0
+44,89,No Contrast,0,16,0
+44,89,One Contrast Privileged,1,16,0
+44,89,Two Contrasts Shared,1,32,0
+46,92,No Contrast,0.1875,16,0
+46,92,One Contrast Privileged,1,16,0
+46,92,Two Contrasts Shared,1,32,0
+46,93,No Contrast,0,16,0
+46,93,One Contrast Privileged,0.375,16,0
+46,93,Two Contrasts Shared,1,32,0
+47,94,No Contrast,0,16,1
+47,94,One Contrast Privileged,1,16,0
+47,94,Two Contrasts Shared,0.96875,32,0
+47,95,No Contrast,0,16,0
+47,95,One Contrast Privileged,1,16,0
+47,95,Two Contrasts Shared,1,32,0
+48,96,No Contrast,0.0625,16,0
+48,96,One Contrast Privileged,0.875,16,0
+48,96,Two Contrasts Shared,0.8125,32,0
+48,97,No Contrast,0.125,16,0
+48,97,One Contrast Privileged,1,16,0
+48,97,Two Contrasts Shared,1,32,0
+49,98,No Contrast,0.5625,16,0
+49,98,One Contrast Privileged,1,16,0
+49,98,Two Contrasts Shared,1,32,0
+49,99,No Contrast,0.625,16,0
+49,99,One Contrast Privileged,0.375,16,0
+49,99,Two Contrasts Shared,1,32,0
+50,100,No Contrast,0,16,0
+50,100,One Contrast Privileged,1,16,0
+50,100,Two Contrasts Shared,0.96875,32,0
+50,101,No Contrast,0,16,0
+50,101,One Contrast Privileged,0.25,16,0
+50,101,Two Contrasts Shared,1,32,0
+51,102,No Contrast,0.125,16,0
+51,102,One Contrast Privileged,0.9375,16,0
+51,102,Two Contrasts Shared,1,32,0
+51,103,No Contrast,0,16,0
+51,103,One Contrast Privileged,0.6428571428571429,16,2
+51,103,Two Contrasts Shared,0.9032258064516129,32,1
+52,104,No Contrast,0,16,0
+52,104,One Contrast Privileged,0.9375,16,0
+52,104,Two Contrasts Shared,0.875,32,0
+52,105,No Contrast,0,16,0
+52,105,One Contrast Privileged,0.125,16,0
+52,105,Two Contrasts Shared,1,32,0
+53,106,No Contrast,0,16,0
+53,106,One Contrast Privileged,0.9375,16,0
+53,106,Two Contrasts Shared,1,32,0
+53,107,No Contrast,0,16,0
+53,107,One Contrast Privileged,1,16,4
+53,107,Two Contrasts Shared,0.9629629629629629,32,5
+54,108,No Contrast,0,16,0
+54,108,One Contrast Privileged,0.5625,16,0
+54,108,Two Contrasts Shared,1,32,0
+54,109,No Contrast,0.0625,16,0
+54,109,One Contrast Privileged,0.9375,16,0
+54,109,Two Contrasts Shared,0.96875,32,0
+55,110,No Contrast,0,16,0
+55,110,One Contrast Privileged,0.3125,16,0
+55,110,Two Contrasts Shared,1,32,0
+55,111,No Contrast,0,16,0
+55,111,One Contrast Privileged,0.3125,16,0
+55,111,Two Contrasts Shared,1,32,0
+56,112,No Contrast,0.125,16,0
+56,112,One Contrast Privileged,1,16,0
+56,112,Two Contrasts Shared,1,32,0
+56,113,No Contrast,0.5,16,0
+56,113,One Contrast Privileged,0.9375,16,0
+56,113,Two Contrasts Shared,1,32,0
+57,114,No Contrast,0.125,16,0
+57,114,One Contrast Privileged,0.4375,16,0
+57,114,Two Contrasts Shared,0.96875,32,0
+57,115,No Contrast,0,16,0
+57,115,One Contrast Privileged,1,16,0
+57,115,Two Contrasts Shared,1,32,0
+58,116,No Contrast,0.0625,16,0
+58,116,One Contrast Privileged,0.75,16,0
+58,116,Two Contrasts Shared,0.96875,32,0
+58,117,No Contrast,0,16,0
+58,117,One Contrast Privileged,0.5,16,0
+58,117,Two Contrasts Shared,1,32,0
+59,118,No Contrast,0.1875,16,0
+59,118,One Contrast Privileged,1,16,0
+59,118,Two Contrasts Shared,1,32,0
+59,119,No Contrast,0.0625,16,0
+59,119,One Contrast Privileged,0.1875,16,0
+59,119,Two Contrasts Shared,0.9375,32,0
+60,120,No Contrast,0.0625,16,0
+60,120,One Contrast Privileged,0.125,16,0
+60,120,Two Contrasts Shared,1,32,0
+60,121,No Contrast,0.125,16,0
+60,121,One Contrast Privileged,0.5,16,0
+60,121,Two Contrasts Shared,1,32,0
+61,122,No Contrast,0,16,0
+61,122,One Contrast Privileged,0.875,16,0
+61,122,Two Contrasts Shared,1,32,0
+61,123,No Contrast,0,16,0
+61,123,One Contrast Privileged,0.9375,16,0
+61,123,Two Contrasts Shared,1,32,0
+62,124,No Contrast,0,16,0
+62,124,One Contrast Privileged,0.375,16,0
+62,124,Two Contrasts Shared,0.9375,32,0
+62,125,No Contrast,0,16,0
+62,125,One Contrast Privileged,0.25,16,0
+62,125,Two Contrasts Shared,1,32,0
+63,126,No Contrast,0,16,0
+63,126,One Contrast Privileged,0.875,16,0
+63,126,Two Contrasts Shared,1,32,0
+63,127,No Contrast,0.0625,16,0
+63,127,One Contrast Privileged,1,16,0
+63,127,Two Contrasts Shared,1,32,0
+64,128,No Contrast,0.0625,16,0
+64,128,One Contrast Privileged,0.4375,16,0
+64,128,Two Contrasts Shared,1,32,0
+64,129,No Contrast,0.0625,16,0
+64,129,One Contrast Privileged,0.875,16,0
+64,129,Two Contrasts Shared,1,32,0
+65,130,No Contrast,0,16,0
+65,130,One Contrast Privileged,0.3125,16,0
+65,130,Two Contrasts Shared,0.96875,32,0
+65,131,No Contrast,0.0625,16,0
+65,131,One Contrast Privileged,0.875,16,0
+65,131,Two Contrasts Shared,0.96875,32,0
+66,132,No Contrast,0,16,1
+66,132,One Contrast Privileged,0.875,16,0
+66,132,Two Contrasts Shared,1,32,0
+66,133,No Contrast,0,16,0
+66,133,One Contrast Privileged,0.75,16,0
+66,133,Two Contrasts Shared,0.96875,32,0
+67,134,No Contrast,0,16,0
+67,134,One Contrast Privileged,0.0625,16,0
+67,134,Two Contrasts Shared,0.96875,32,0
+67,135,No Contrast,0.0625,16,0
+67,135,One Contrast Privileged,0.0625,16,0
+67,135,Two Contrasts Shared,1,32,0
+69,138,No Contrast,0,16,0
+69,138,One Contrast Privileged,0.4375,16,0
+69,138,Two Contrasts Shared,1,32,0
+69,139,No Contrast,0,16,0
+69,139,One Contrast Privileged,0.4375,16,0
+69,139,Two Contrasts Shared,0.90625,32,0
+70,140,No Contrast,0,16,0
+70,140,One Contrast Privileged,0.5,16,0
+70,140,Two Contrasts Shared,1,32,0
+70,141,No Contrast,0,16,0
+70,141,One Contrast Privileged,0.25,16,0
+70,141,Two Contrasts Shared,1,32,0
+72,144,No Contrast,0.1875,16,0
+72,144,One Contrast Privileged,0.9375,16,0
+72,144,Two Contrasts Shared,0.96875,32,0
+72,145,No Contrast,0.0625,16,0
+72,145,One Contrast Privileged,0.375,16,0
+72,145,Two Contrasts Shared,1,32,0
+74,148,No Contrast,0,16,0
+74,148,One Contrast Privileged,1,16,0
+74,148,Two Contrasts Shared,1,32,0
+74,149,No Contrast,0,16,0
+74,149,One Contrast Privileged,0.25,16,0
+74,149,Two Contrasts Shared,1,32,0
+75,150,No Contrast,0.5,16,0
+75,150,One Contrast Privileged,1,16,0
+75,150,Two Contrasts Shared,0.9375,32,0
+75,151,No Contrast,0.375,16,0
+75,151,One Contrast Privileged,1,16,0
+75,151,Two Contrasts Shared,1,32,0
+76,152,No Contrast,0.0625,16,0
+76,152,One Contrast Privileged,0.875,16,0
+76,152,Two Contrasts Shared,1,32,0
+76,153,No Contrast,0.125,16,0
+76,153,One Contrast Privileged,0.25,16,0
+76,153,Two Contrasts Shared,1,32,1
+77,154,No Contrast,0,16,0
+77,154,One Contrast Privileged,1,16,0
+77,154,Two Contrasts Shared,1,32,0
+77,155,No Contrast,0,16,0
+77,155,One Contrast Privileged,0.5,16,0
+77,155,Two Contrasts Shared,0.96875,32,0
+78,156,No Contrast,0,16,1
+78,156,One Contrast Privileged,1,16,0
+78,156,Two Contrasts Shared,0.96875,32,0
+78,157,No Contrast,0,16,1
+78,157,One Contrast Privileged,0.9375,16,0
+78,157,Two Contrasts Shared,1,32,0
+79,158,No Contrast,0,16,0
+79,158,One Contrast Privileged,0.6875,16,0
+79,158,Two Contrasts Shared,0.96875,32,0
+79,159,No Contrast,0,16,0
+79,159,One Contrast Privileged,0.1875,16,0
+79,159,Two Contrasts Shared,1,32,0
+80,160,No Contrast,0,16,0
+80,160,One Contrast Privileged,0.125,16,0
+80,160,Two Contrasts Shared,1,32,0
+80,161,No Contrast,0.0625,16,0
+80,161,One Contrast Privileged,0.9375,16,0
+80,161,Two Contrasts Shared,0.96875,32,0
+81,162,No Contrast,0.0625,16,0
+81,162,One Contrast Privileged,0.375,16,0
+81,162,Two Contrasts Shared,1,32,0
+81,163,No Contrast,0.0625,16,0
+81,163,One Contrast Privileged,0.8125,16,0
+81,163,Two Contrasts Shared,0.96875,32,0
+83,166,No Contrast,0,16,0
+83,166,One Contrast Privileged,1,16,0
+83,166,Two Contrasts Shared,1,32,0
+83,167,No Contrast,0,16,0
+83,167,One Contrast Privileged,0.5625,16,0
+83,167,Two Contrasts Shared,1,32,0
+84,168,No Contrast,0,16,0
+84,168,One Contrast Privileged,0.375,16,0
+84,168,Two Contrasts Shared,1,32,0
+84,169,No Contrast,0.0625,16,0
+84,169,One Contrast Privileged,0.9375,16,0
+84,169,Two Contrasts Shared,1,32,0
+85,170,No Contrast,0.5625,16,0
+85,170,One Contrast Privileged,0.875,16,0
+85,170,Two Contrasts Shared,1,32,0
+85,171,No Contrast,0.0625,16,0
+85,171,One Contrast Privileged,0.9375,16,0
+85,171,Two Contrasts Shared,0.9375,32,0
+86,172,No Contrast,0,16,0
+86,172,One Contrast Privileged,1,16,0
+86,172,Two Contrasts Shared,0.96875,32,0
+86,173,No Contrast,0,16,0
+86,173,One Contrast Privileged,0.1875,16,0
+86,173,Two Contrasts Shared,1,32,0
+87,184,No Contrast,0,16,0
+87,184,One Contrast Privileged,1,16,0
+87,184,Two Contrasts Shared,1,32,0
+87,185,No Contrast,0,16,0
+87,185,One Contrast Privileged,0.1875,16,0
+87,185,Two Contrasts Shared,0.9375,32,0
+88,176,No Contrast,0.0625,16,0
+88,176,One Contrast Privileged,0.25,16,0
+88,176,Two Contrasts Shared,1,32,0
+88,177,No Contrast,0,16,0
+88,177,One Contrast Privileged,0.8125,16,0
+88,177,Two Contrasts Shared,0.875,32,0
+89,178,No Contrast,0,16,0
+89,178,One Contrast Privileged,0.9375,16,0
+89,178,Two Contrasts Shared,0.8709677419354839,32,1
+89,179,No Contrast,0.0625,16,0
+89,179,One Contrast Privileged,0.375,16,0
+89,179,Two Contrasts Shared,1,32,0
+90,180,No Contrast,0.0625,16,0
+90,180,One Contrast Privileged,1,16,0
+90,180,Two Contrasts Shared,0.96875,32,0
+90,181,No Contrast,0.06666666666666667,16,1
+90,181,One Contrast Privileged,1,16,0
+90,181,Two Contrasts Shared,1,32,0

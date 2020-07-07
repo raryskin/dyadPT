@@ -1,0 +1,913 @@
+pair,listener,crit_half,condition,prop_target_fix,prop_compet_fix,num_trials,numtNA,numcNA
+3,5,firsthalf,Two Contrasts Shared,0.7142857142857143,0.42857142857142855,14,0,0
+3,5,firsthalf,Two Contrasts Privileged,0.8571428571428571,0.2857142857142857,7,0,0
+3,5,firsthalf,One Contrast,1,0.14285714285714285,7,0,0
+3,5,secondhalf,Two Contrasts Shared,0.875,0.375,16,0,0
+3,5,secondhalf,Two Contrasts Privileged,1,0.1111111111111111,9,0,0
+3,5,secondhalf,One Contrast,1,0.625,8,0,0
+3,6,firsthalf,Two Contrasts Shared,0.9285714285714286,0.6428571428571429,14,0,0
+3,6,firsthalf,Two Contrasts Privileged,0.8333333333333334,0.5,6,0,0
+3,6,firsthalf,One Contrast,1,0.5714285714285714,7,0,0
+3,6,secondhalf,Two Contrasts Shared,0.8,0.4666666666666667,15,0,0
+3,6,secondhalf,Two Contrasts Privileged,0.8571428571428571,0.7142857142857143,7,0,0
+3,6,secondhalf,One Contrast,1,0.125,8,0,0
+4,7,firsthalf,Two Contrasts Shared,0.8461538461538461,0.5384615384615384,13,0,0
+4,7,firsthalf,Two Contrasts Privileged,0.7142857142857143,0.2857142857142857,7,0,0
+4,7,firsthalf,One Contrast,0.8571428571428571,0.42857142857142855,7,0,0
+4,7,secondhalf,Two Contrasts Shared,0.7333333333333333,0.5333333333333333,15,0,0
+4,7,secondhalf,Two Contrasts Privileged,1,0.25,8,0,0
+4,7,secondhalf,One Contrast,0.625,0.375,8,0,0
+4,8,firsthalf,Two Contrasts Shared,0.8,0.3,10,0,0
+4,8,firsthalf,Two Contrasts Privileged,1,0.25,4,0,0
+4,8,firsthalf,One Contrast,0.4,0.4,5,0,0
+4,8,secondhalf,Two Contrasts Shared,0.75,0.6666666666666666,12,0,0
+4,8,secondhalf,Two Contrasts Privileged,1,0.16666666666666666,6,0,0
+4,8,secondhalf,One Contrast,1,0.3333333333333333,6,0,0
+5,9,firsthalf,Two Contrasts Shared,0.8888888888888888,0.4444444444444444,9,0,0
+5,9,firsthalf,Two Contrasts Privileged,0.8571428571428571,0.2857142857142857,7,0,0
+5,9,firsthalf,One Contrast,0.7142857142857143,0.42857142857142855,7,0,0
+5,9,secondhalf,Two Contrasts Shared,0.7272727272727273,0.7272727272727273,11,0,0
+5,9,secondhalf,Two Contrasts Privileged,0.875,0.5,8,0,0
+5,9,secondhalf,One Contrast,0.6666666666666666,0.3333333333333333,9,0,0
+5,10,firsthalf,Two Contrasts Shared,0.6666666666666666,0.6,15,0,0
+5,10,firsthalf,Two Contrasts Privileged,0.8,0.4,5,0,0
+5,10,firsthalf,One Contrast,1,0.3333333333333333,6,0,0
+5,10,secondhalf,Two Contrasts Shared,0.875,0.5625,16,0,0
+5,10,secondhalf,Two Contrasts Privileged,0.7142857142857143,0.42857142857142855,7,0,0
+5,10,secondhalf,One Contrast,1,0.42857142857142855,7,0,0
+6,11,firsthalf,Two Contrasts Shared,0.8333333333333334,0.4166666666666667,12,0,0
+6,11,firsthalf,Two Contrasts Privileged,1,0.3333333333333333,6,0,0
+6,11,firsthalf,One Contrast,0.8333333333333334,0.3333333333333333,6,0,0
+6,11,secondhalf,Two Contrasts Shared,0.46153846153846156,0.5384615384615384,13,0,0
+6,11,secondhalf,Two Contrasts Privileged,0.875,0.25,8,0,0
+6,11,secondhalf,One Contrast,0.8571428571428571,0.7142857142857143,7,0,0
+6,12,firsthalf,Two Contrasts Shared,0.6923076923076923,0.5384615384615384,13,0,0
+6,12,firsthalf,Two Contrasts Privileged,0.8571428571428571,0.2857142857142857,7,0,0
+6,12,firsthalf,One Contrast,0.5,0.3333333333333333,6,0,0
+6,12,secondhalf,Two Contrasts Shared,0.6666666666666666,0.2,15,0,0
+6,12,secondhalf,Two Contrasts Privileged,0.5,0.625,8,0,0
+6,12,secondhalf,One Contrast,0.375,0.375,8,0,0
+7,13,firsthalf,Two Contrasts Shared,0.6,0.6,15,0,0
+7,13,firsthalf,Two Contrasts Privileged,0.8571428571428571,0.2857142857142857,7,0,0
+7,13,firsthalf,One Contrast,1,0,7,0,0
+7,13,secondhalf,Two Contrasts Shared,0.6875,0.3125,16,0,0
+7,13,secondhalf,Two Contrasts Privileged,0.5,0.375,8,0,0
+7,13,secondhalf,One Contrast,0.6666666666666666,0.3333333333333333,9,0,0
+7,14,firsthalf,Two Contrasts Shared,0.8571428571428571,0.5714285714285714,14,0,0
+7,14,firsthalf,Two Contrasts Privileged,1,0.5714285714285714,7,0,0
+7,14,firsthalf,One Contrast,0.8333333333333334,0.5,6,0,0
+7,14,secondhalf,Two Contrasts Shared,0.8125,0.6875,16,0,0
+7,14,secondhalf,Two Contrasts Privileged,0.875,0.625,8,0,0
+7,14,secondhalf,One Contrast,0.875,0.25,8,0,0
+8,15,firsthalf,Two Contrasts Shared,0.8461538461538461,0.3076923076923077,13,0,0
+8,15,firsthalf,Two Contrasts Privileged,1,0.42857142857142855,7,0,0
+8,15,firsthalf,One Contrast,0.8571428571428571,0.14285714285714285,7,0,0
+8,15,secondhalf,Two Contrasts Shared,0.8666666666666667,0.3333333333333333,15,0,0
+8,15,secondhalf,Two Contrasts Privileged,0.8888888888888888,0.5555555555555556,9,0,0
+8,15,secondhalf,One Contrast,0.875,0.75,8,0,0
+8,16,firsthalf,Two Contrasts Shared,0.8461538461538461,0.6153846153846154,13,0,0
+8,16,firsthalf,Two Contrasts Privileged,0.8333333333333334,0.3333333333333333,6,0,0
+8,16,firsthalf,One Contrast,0.8333333333333334,0.3333333333333333,6,0,0
+8,16,secondhalf,Two Contrasts Shared,0.6666666666666666,0.2,15,0,0
+8,16,secondhalf,Two Contrasts Privileged,0.8571428571428571,0.5714285714285714,7,0,0
+8,16,secondhalf,One Contrast,0.875,0.25,8,0,0
+9,17,firsthalf,Two Contrasts Shared,1,0.5454545454545454,11,0,0
+9,17,firsthalf,Two Contrasts Privileged,0.8571428571428571,0.42857142857142855,7,0,0
+9,17,firsthalf,One Contrast,1,0,7,0,0
+9,17,secondhalf,Two Contrasts Shared,0.9230769230769231,0.5384615384615384,13,0,0
+9,17,secondhalf,Two Contrasts Privileged,1,0.625,8,0,0
+9,17,secondhalf,One Contrast,0.375,0.25,8,0,0
+9,18,firsthalf,Two Contrasts Shared,0.6666666666666666,0.5,12,0,0
+9,18,firsthalf,Two Contrasts Privileged,0.8571428571428571,0.8571428571428571,7,0,0
+9,18,firsthalf,One Contrast,0.8571428571428571,0.5714285714285714,7,0,0
+9,18,secondhalf,Two Contrasts Shared,0.6428571428571429,0.5,14,0,0
+9,18,secondhalf,Two Contrasts Privileged,1,0.3333333333333333,9,0,0
+9,18,secondhalf,One Contrast,0.5,0.5,8,0,0
+10,19,firsthalf,Two Contrasts Shared,0.6923076923076923,0.5384615384615384,13,0,0
+10,19,firsthalf,Two Contrasts Privileged,1,0.7142857142857143,7,0,0
+10,19,firsthalf,One Contrast,0.8333333333333334,0.5,6,0,0
+10,19,secondhalf,Two Contrasts Shared,0.8571428571428571,0.6428571428571429,14,0,0
+10,19,secondhalf,Two Contrasts Privileged,1,0.5,8,0,0
+10,19,secondhalf,One Contrast,0.8571428571428571,0.5714285714285714,7,0,0
+10,20,firsthalf,Two Contrasts Shared,0.8,0.7,10,0,0
+10,20,firsthalf,Two Contrasts Privileged,0.7142857142857143,0.14285714285714285,7,0,0
+10,20,firsthalf,One Contrast,1,0.2,5,0,0
+10,20,secondhalf,Two Contrasts Shared,0.75,0.3333333333333333,12,0,0
+10,20,secondhalf,Two Contrasts Privileged,0.75,0,8,0,0
+10,20,secondhalf,One Contrast,1,0.16666666666666666,6,0,0
+11,21,firsthalf,Two Contrasts Shared,0.7857142857142857,0.6428571428571429,14,0,0
+11,21,firsthalf,Two Contrasts Privileged,0.8333333333333334,0.3333333333333333,6,0,0
+11,21,firsthalf,One Contrast,0.8333333333333334,0.3333333333333333,6,0,0
+11,21,secondhalf,Two Contrasts Shared,0.7333333333333333,0.4666666666666667,15,0,0
+11,21,secondhalf,Two Contrasts Privileged,0.7142857142857143,0.42857142857142855,7,0,0
+11,21,secondhalf,One Contrast,0.875,0,8,0,0
+11,22,firsthalf,Two Contrasts Shared,0.5833333333333334,0.25,12,0,0
+11,22,firsthalf,Two Contrasts Privileged,0.7142857142857143,0.14285714285714285,7,0,0
+11,22,firsthalf,One Contrast,0.16666666666666666,0.16666666666666666,6,0,0
+11,22,secondhalf,Two Contrasts Shared,0.6153846153846154,0.5384615384615384,13,0,0
+11,22,secondhalf,Two Contrasts Privileged,0.8888888888888888,0.1111111111111111,9,0,0
+11,22,secondhalf,One Contrast,0.8571428571428571,0.14285714285714285,7,0,0
+14,27,firsthalf,Two Contrasts Shared,0.7,0.2,10,0,0
+14,27,firsthalf,Two Contrasts Privileged,0.8,0.4,5,0,0
+14,27,firsthalf,One Contrast,0.6666666666666666,0.3333333333333333,3,0,0
+14,27,secondhalf,Two Contrasts Shared,0.6666666666666666,0.3333333333333333,12,0,0
+14,27,secondhalf,Two Contrasts Privileged,0.2857142857142857,0.8571428571428571,7,0,0
+14,27,secondhalf,One Contrast,1,0,4,0,0
+14,28,firsthalf,Two Contrasts Shared,0.7692307692307693,0.46153846153846156,13,0,0
+14,28,firsthalf,Two Contrasts Privileged,0.8571428571428571,0.7142857142857143,7,0,0
+14,28,firsthalf,One Contrast,0.8333333333333334,1,6,0,0
+14,28,secondhalf,Two Contrasts Shared,0.6428571428571429,0.6428571428571429,14,0,0
+14,28,secondhalf,Two Contrasts Privileged,0.75,0.5,8,0,0
+14,28,secondhalf,One Contrast,0.875,0.25,8,0,0
+15,29,firsthalf,Two Contrasts Shared,0.7857142857142857,0.2857142857142857,14,0,0
+15,29,firsthalf,Two Contrasts Privileged,0.7142857142857143,0.42857142857142855,7,0,0
+15,29,firsthalf,One Contrast,0.8333333333333334,0.3333333333333333,6,0,0
+15,29,secondhalf,Two Contrasts Shared,0.375,0.3125,16,0,0
+15,29,secondhalf,Two Contrasts Privileged,0.875,0.375,8,0,0
+15,29,secondhalf,One Contrast,0.75,0.25,8,0,0
+15,30,firsthalf,Two Contrasts Shared,0.9166666666666666,0.5833333333333334,12,0,0
+15,30,firsthalf,Two Contrasts Privileged,1,0.42857142857142855,7,0,0
+15,30,firsthalf,One Contrast,0.8571428571428571,0.5714285714285714,7,0,0
+15,30,secondhalf,Two Contrasts Shared,0.8571428571428571,0.5,14,0,0
+15,30,secondhalf,Two Contrasts Privileged,0.5,0.625,8,0,0
+15,30,secondhalf,One Contrast,0.875,0.25,8,0,0
+16,31,firsthalf,Two Contrasts Shared,0.9285714285714286,0.6428571428571429,14,0,0
+16,31,firsthalf,Two Contrasts Privileged,0.5,0.75,4,0,0
+16,31,firsthalf,One Contrast,0.6,0.6,5,0,0
+16,31,secondhalf,Two Contrasts Shared,0.9375,0.375,16,0,0
+16,31,secondhalf,Two Contrasts Privileged,1,0.4,5,0,0
+16,31,secondhalf,One Contrast,1,0.16666666666666666,6,0,0
+16,32,firsthalf,Two Contrasts Shared,0.7857142857142857,0.5714285714285714,14,0,0
+16,32,firsthalf,Two Contrasts Privileged,0.5714285714285714,0.2857142857142857,7,0,0
+16,32,firsthalf,One Contrast,0.8571428571428571,0.2857142857142857,7,0,0
+16,32,secondhalf,Two Contrasts Shared,0.8125,0.4375,16,0,0
+16,32,secondhalf,Two Contrasts Privileged,0.7777777777777778,0.5555555555555556,9,0,0
+16,32,secondhalf,One Contrast,0.6666666666666666,0.3333333333333333,9,0,0
+18,35,firsthalf,Two Contrasts Shared,0.5,0.6428571428571429,14,0,0
+18,35,firsthalf,Two Contrasts Privileged,0.8571428571428571,0.7142857142857143,7,0,0
+18,35,firsthalf,One Contrast,0.8333333333333334,0.5,6,0,0
+18,35,secondhalf,Two Contrasts Shared,0.7333333333333333,0.4666666666666667,15,0,0
+18,35,secondhalf,Two Contrasts Privileged,1,0.3333333333333333,9,0,0
+18,35,secondhalf,One Contrast,0.875,0.625,8,0,0
+18,36,firsthalf,Two Contrasts Shared,0.75,0.4166666666666667,12,0,0
+18,36,firsthalf,Two Contrasts Privileged,0.8,0.8,5,0,0
+18,36,firsthalf,One Contrast,1,0,5,0,0
+18,36,secondhalf,Two Contrasts Shared,0.9230769230769231,0.46153846153846156,13,0,0
+18,36,secondhalf,Two Contrasts Privileged,1,0.14285714285714285,7,0,0
+18,36,secondhalf,One Contrast,1,0.16666666666666666,6,0,0
+19,37,firsthalf,Two Contrasts Shared,0.7777777777777778,0.3333333333333333,9,0,0
+19,37,firsthalf,Two Contrasts Privileged,0.75,0.5,4,0,0
+19,37,firsthalf,One Contrast,1,0.2,5,0,0
+19,37,secondhalf,Two Contrasts Shared,0.9090909090909091,0.36363636363636365,11,0,0
+19,37,secondhalf,Two Contrasts Privileged,0.8333333333333334,0.16666666666666666,6,0,0
+19,37,secondhalf,One Contrast,0.8571428571428571,0.42857142857142855,7,0,0
+19,38,firsthalf,Two Contrasts Shared,0.7272727272727273,0.6363636363636364,11,0,0
+19,38,firsthalf,Two Contrasts Privileged,0.5,0.5,4,0,0
+19,38,firsthalf,One Contrast,0.6666666666666666,0.3333333333333333,3,0,0
+19,38,secondhalf,Two Contrasts Shared,0.7692307692307693,0.46153846153846156,13,0,0
+19,38,secondhalf,Two Contrasts Privileged,1,0.4,5,0,0
+19,38,secondhalf,One Contrast,0.8,0.6,5,0,0
+20,39,firsthalf,Two Contrasts Shared,0.6923076923076923,0.5384615384615384,13,0,0
+20,39,firsthalf,Two Contrasts Privileged,0.7142857142857143,0.8571428571428571,7,0,0
+20,39,firsthalf,One Contrast,0.7142857142857143,0.2857142857142857,7,0,0
+20,39,secondhalf,Two Contrasts Shared,0.7142857142857143,0.5,14,0,0
+20,39,secondhalf,Two Contrasts Privileged,0.7777777777777778,0.4444444444444444,9,0,0
+20,39,secondhalf,One Contrast,0.625,0.5,8,0,0
+20,40,firsthalf,Two Contrasts Shared,0.5714285714285714,0.5714285714285714,14,0,0
+20,40,firsthalf,Two Contrasts Privileged,0.4,0.8,5,0,0
+20,40,firsthalf,One Contrast,1,0.16666666666666666,6,0,0
+20,40,secondhalf,Two Contrasts Shared,0.8,0.4666666666666667,15,0,0
+20,40,secondhalf,Two Contrasts Privileged,0.8571428571428571,0.42857142857142855,7,0,0
+20,40,secondhalf,One Contrast,0.875,0.25,8,0,0
+21,41,firsthalf,Two Contrasts Shared,0.9285714285714286,0.5,14,0,0
+21,41,firsthalf,Two Contrasts Privileged,0.8333333333333334,0.16666666666666666,6,0,0
+21,41,firsthalf,One Contrast,0.8571428571428571,0.5714285714285714,7,0,0
+21,41,secondhalf,Two Contrasts Shared,0.875,0.4375,16,0,0
+21,41,secondhalf,Two Contrasts Privileged,0.7142857142857143,0.2857142857142857,7,0,0
+21,41,secondhalf,One Contrast,0.7777777777777778,0.4444444444444444,9,0,0
+21,42,firsthalf,Two Contrasts Shared,1,0.3333333333333333,12,0,0
+21,42,firsthalf,Two Contrasts Privileged,1,0.3333333333333333,6,0,0
+21,42,firsthalf,One Contrast,0.6,0.4,5,0,0
+21,42,secondhalf,Two Contrasts Shared,0.5714285714285714,0.42857142857142855,14,0,0
+21,42,secondhalf,Two Contrasts Privileged,0.2857142857142857,0,7,0,0
+21,42,secondhalf,One Contrast,1,1,6,0,0
+22,43,firsthalf,Two Contrasts Shared,0.9285714285714286,0.5,14,0,0
+22,43,firsthalf,Two Contrasts Privileged,0.7142857142857143,0.7142857142857143,7,0,0
+22,43,firsthalf,One Contrast,1,0.2,5,0,0
+22,43,secondhalf,Two Contrasts Shared,0.8,0.26666666666666666,15,0,0
+22,43,secondhalf,Two Contrasts Privileged,0.8888888888888888,0.4444444444444444,9,0,0
+22,43,secondhalf,One Contrast,1,0.42857142857142855,7,0,0
+22,44,firsthalf,Two Contrasts Shared,0.9285714285714286,0.42857142857142855,14,0,0
+22,44,firsthalf,Two Contrasts Privileged,0.8571428571428571,0.42857142857142855,7,0,0
+22,44,firsthalf,One Contrast,0.8571428571428571,0.14285714285714285,7,0,0
+22,44,secondhalf,Two Contrasts Shared,0.8125,0.4375,16,0,0
+22,44,secondhalf,Two Contrasts Privileged,0.8888888888888888,0.4444444444444444,9,0,0
+22,44,secondhalf,One Contrast,1,0.25,8,0,0
+23,45,firsthalf,Two Contrasts Shared,0.7857142857142857,0.5,14,0,0
+23,45,firsthalf,Two Contrasts Privileged,0.8333333333333334,0.16666666666666666,6,0,0
+23,45,firsthalf,One Contrast,0.8333333333333334,0.3333333333333333,6,0,0
+23,45,secondhalf,Two Contrasts Shared,0.6875,0.5,16,0,0
+23,45,secondhalf,Two Contrasts Privileged,1,0.125,8,0,0
+23,45,secondhalf,One Contrast,1,0.5,8,0,0
+23,46,firsthalf,Two Contrasts Shared,0.8666666666666667,0.4,15,0,0
+23,46,firsthalf,Two Contrasts Privileged,1,0.2857142857142857,7,0,0
+23,46,firsthalf,One Contrast,0.8571428571428571,0.2857142857142857,7,0,0
+23,46,secondhalf,Two Contrasts Shared,0.75,0.625,16,0,0
+23,46,secondhalf,Two Contrasts Privileged,0.75,0.5,8,0,0
+23,46,secondhalf,One Contrast,0.75,0,8,0,0
+24,47,firsthalf,Two Contrasts Shared,0.75,0.3333333333333333,12,0,0
+24,47,firsthalf,Two Contrasts Privileged,0.8333333333333334,0.5,6,0,0
+24,47,firsthalf,One Contrast,0.8,0,5,0,0
+24,47,secondhalf,Two Contrasts Shared,0.7142857142857143,0.2857142857142857,14,0,0
+24,47,secondhalf,Two Contrasts Privileged,0.7142857142857143,0.5714285714285714,7,0,0
+24,47,secondhalf,One Contrast,0.8333333333333334,0.3333333333333333,6,0,0
+24,48,firsthalf,Two Contrasts Shared,0.2727272727272727,0.36363636363636365,11,0,0
+24,48,firsthalf,Two Contrasts Privileged,0,0.4,5,0,0
+24,48,firsthalf,One Contrast,0,0.2,5,0,0
+24,48,secondhalf,Two Contrasts Shared,0.4166666666666667,0.25,12,0,0
+24,48,secondhalf,Two Contrasts Privileged,0.42857142857142855,0.2857142857142857,7,0,0
+24,48,secondhalf,One Contrast,0,0.2857142857142857,7,0,0
+25,49,firsthalf,Two Contrasts Shared,0.8461538461538461,0.38461538461538464,13,0,0
+25,49,firsthalf,Two Contrasts Privileged,0.5,0.5,6,0,0
+25,49,firsthalf,One Contrast,0.8333333333333334,0.16666666666666666,6,0,0
+25,49,secondhalf,Two Contrasts Shared,0.8571428571428571,0.35714285714285715,14,0,0
+25,49,secondhalf,Two Contrasts Privileged,0.875,0.125,8,0,0
+25,49,secondhalf,One Contrast,0.875,0.25,8,0,0
+25,50,firsthalf,Two Contrasts Shared,1,0.5384615384615384,13,0,0
+25,50,firsthalf,Two Contrasts Privileged,0.6,0.4,5,0,0
+25,50,firsthalf,One Contrast,0.6666666666666666,0,6,0,0
+25,50,secondhalf,Two Contrasts Shared,0.8,0.5333333333333333,15,0,0
+25,50,secondhalf,Two Contrasts Privileged,0.6666666666666666,0.3333333333333333,6,0,0
+25,50,secondhalf,One Contrast,1,0.2857142857142857,7,0,0
+27,53,firsthalf,Two Contrasts Shared,0.6428571428571429,0.42857142857142855,14,0,0
+27,53,firsthalf,Two Contrasts Privileged,1,0.5,6,0,0
+27,53,firsthalf,One Contrast,0.6666666666666666,0.3333333333333333,6,0,0
+27,53,secondhalf,Two Contrasts Shared,0.5333333333333333,0.4666666666666667,15,0,0
+27,53,secondhalf,Two Contrasts Privileged,1,0.42857142857142855,7,0,0
+27,53,secondhalf,One Contrast,0.5714285714285714,0.2857142857142857,7,0,0
+27,54,firsthalf,Two Contrasts Shared,0.9230769230769231,0.5384615384615384,13,0,0
+27,54,firsthalf,Two Contrasts Privileged,1,0.3333333333333333,6,0,0
+27,54,firsthalf,One Contrast,0.8333333333333334,0.3333333333333333,6,0,0
+27,54,secondhalf,Two Contrasts Shared,0.8,0.3333333333333333,15,0,0
+27,54,secondhalf,Two Contrasts Privileged,1,0.42857142857142855,7,0,0
+27,54,secondhalf,One Contrast,0.5714285714285714,0.7142857142857143,7,0,0
+28,55,firsthalf,Two Contrasts Shared,0.6923076923076923,0.46153846153846156,13,0,0
+28,55,firsthalf,Two Contrasts Privileged,0.7142857142857143,0.42857142857142855,7,0,0
+28,55,firsthalf,One Contrast,0.6666666666666666,0.5,6,0,0
+28,55,secondhalf,Two Contrasts Shared,0.8666666666666667,0.6666666666666666,15,0,0
+28,55,secondhalf,Two Contrasts Privileged,0.7777777777777778,0.6666666666666666,9,0,0
+28,55,secondhalf,One Contrast,0.625,0.375,8,0,0
+28,56,firsthalf,Two Contrasts Shared,1,0.42857142857142855,14,0,0
+28,56,firsthalf,Two Contrasts Privileged,1,0.2857142857142857,7,0,0
+28,56,firsthalf,One Contrast,0.8571428571428571,0.42857142857142855,7,0,0
+28,56,secondhalf,Two Contrasts Shared,0.75,0.875,16,0,0
+28,56,secondhalf,Two Contrasts Privileged,0.875,0.625,8,0,0
+28,56,secondhalf,One Contrast,1,0.625,8,0,0
+30,59,firsthalf,Two Contrasts Shared,0.6923076923076923,0.5384615384615384,13,0,0
+30,59,firsthalf,Two Contrasts Privileged,0.8571428571428571,0.7142857142857143,7,0,0
+30,59,firsthalf,One Contrast,1,0.16666666666666666,6,0,0
+30,59,secondhalf,Two Contrasts Shared,0.8571428571428571,0.2857142857142857,14,0,0
+30,59,secondhalf,Two Contrasts Privileged,0.8888888888888888,0.4444444444444444,9,0,0
+30,59,secondhalf,One Contrast,1,0.125,8,0,0
+30,60,firsthalf,Two Contrasts Shared,0.6666666666666666,0.9166666666666666,12,0,0
+30,60,firsthalf,Two Contrasts Privileged,0.75,0.5,4,0,0
+30,60,firsthalf,One Contrast,0.8333333333333334,0.3333333333333333,6,0,0
+30,60,secondhalf,Two Contrasts Shared,0.7692307692307693,0.3076923076923077,13,0,0
+30,60,secondhalf,Two Contrasts Privileged,0.8333333333333334,0.5,6,0,0
+30,60,secondhalf,One Contrast,0.875,0.75,8,0,0
+31,61,firsthalf,Two Contrasts Shared,0.5333333333333333,0.6,15,0,0
+31,61,firsthalf,Two Contrasts Privileged,0.7142857142857143,0.5714285714285714,7,0,0
+31,61,firsthalf,One Contrast,0.7142857142857143,0.2857142857142857,7,0,0
+31,61,secondhalf,Two Contrasts Shared,0.8235294117647058,0.29411764705882354,17,0,0
+31,61,secondhalf,Two Contrasts Privileged,0.6666666666666666,0.4444444444444444,9,0,0
+31,61,secondhalf,One Contrast,0.625,0.375,8,0,0
+31,62,firsthalf,Two Contrasts Shared,0.7857142857142857,0.5,14,0,0
+31,62,firsthalf,Two Contrasts Privileged,0.8333333333333334,0.5,6,0,0
+31,62,firsthalf,One Contrast,0.8571428571428571,0.7142857142857143,7,0,0
+31,62,secondhalf,Two Contrasts Shared,0.875,0.625,16,0,0
+31,62,secondhalf,Two Contrasts Privileged,0.7142857142857143,0.5714285714285714,7,0,0
+31,62,secondhalf,One Contrast,0.875,0.625,8,0,0
+32,63,firsthalf,Two Contrasts Shared,0.9285714285714286,0.2857142857142857,14,0,0
+32,63,firsthalf,Two Contrasts Privileged,0.8,0.4,5,0,0
+32,63,firsthalf,One Contrast,1,0.14285714285714285,7,0,0
+32,63,secondhalf,Two Contrasts Shared,0.75,0.6875,16,0,0
+32,63,secondhalf,Two Contrasts Privileged,0.7142857142857143,0.5714285714285714,7,0,0
+32,63,secondhalf,One Contrast,1,0.3333333333333333,9,0,0
+32,64,firsthalf,Two Contrasts Shared,0.5454545454545454,0.5454545454545454,11,0,0
+32,64,firsthalf,Two Contrasts Privileged,0.6,0.4,5,0,0
+32,64,firsthalf,One Contrast,0.6,0,5,0,0
+32,64,secondhalf,Two Contrasts Shared,0.75,0.5833333333333334,12,0,0
+32,64,secondhalf,Two Contrasts Privileged,0.6666666666666666,0.5,6,0,0
+32,64,secondhalf,One Contrast,0.7142857142857143,0.42857142857142855,7,0,0
+33,65,firsthalf,Two Contrasts Shared,0.6923076923076923,0.6153846153846154,13,0,0
+33,65,firsthalf,Two Contrasts Privileged,0.8333333333333334,0.3333333333333333,6,0,0
+33,65,firsthalf,One Contrast,0.8333333333333334,0.5,6,0,0
+33,65,secondhalf,Two Contrasts Shared,0.8,0.3333333333333333,15,0,0
+33,65,secondhalf,Two Contrasts Privileged,0.875,0.5,8,0,0
+33,65,secondhalf,One Contrast,0.75,0.25,8,0,0
+33,66,firsthalf,Two Contrasts Shared,0.8461538461538461,0.38461538461538464,13,0,0
+33,66,firsthalf,Two Contrasts Privileged,0.8333333333333334,0.5,6,0,0
+33,66,firsthalf,One Contrast,0.5,0.5,6,0,0
+33,66,secondhalf,Two Contrasts Shared,0.8,0.4666666666666667,15,0,0
+33,66,secondhalf,Two Contrasts Privileged,0.5714285714285714,0.5714285714285714,7,0,0
+33,66,secondhalf,One Contrast,1,0.375,8,0,0
+34,67,firsthalf,Two Contrasts Shared,0.8666666666666667,0.3333333333333333,15,0,0
+34,67,firsthalf,Two Contrasts Privileged,0.7142857142857143,0.7142857142857143,7,0,0
+34,67,firsthalf,One Contrast,0.7142857142857143,0.2857142857142857,7,0,0
+34,67,secondhalf,Two Contrasts Shared,0.9411764705882353,0.23529411764705882,17,0,0
+34,67,secondhalf,Two Contrasts Privileged,0.7777777777777778,0.5555555555555556,9,0,0
+34,67,secondhalf,One Contrast,1,0.125,8,0,0
+34,68,firsthalf,Two Contrasts Shared,0.5,0.5714285714285714,14,0,0
+34,68,firsthalf,Two Contrasts Privileged,0.7142857142857143,0.5714285714285714,7,0,0
+34,68,firsthalf,One Contrast,1,0.14285714285714285,7,0,0
+34,68,secondhalf,Two Contrasts Shared,0.6875,0.5625,16,0,0
+34,68,secondhalf,Two Contrasts Privileged,0.75,0.125,8,0,0
+34,68,secondhalf,One Contrast,0.75,0.25,8,0,0
+35,69,firsthalf,Two Contrasts Shared,0.9285714285714286,0.42857142857142855,14,0,0
+35,69,firsthalf,Two Contrasts Privileged,0.8571428571428571,0.5714285714285714,7,0,0
+35,69,firsthalf,One Contrast,0.7142857142857143,0.42857142857142855,7,0,0
+35,69,secondhalf,Two Contrasts Shared,0.8666666666666667,0.3333333333333333,15,0,0
+35,69,secondhalf,Two Contrasts Privileged,0.875,0.5,8,0,0
+35,69,secondhalf,One Contrast,1,0.4444444444444444,9,0,0
+35,70,firsthalf,Two Contrasts Shared,0.8,0.3333333333333333,15,0,0
+35,70,firsthalf,Two Contrasts Privileged,0.7142857142857143,0.5714285714285714,7,0,0
+35,70,firsthalf,One Contrast,1,0.2857142857142857,7,0,0
+35,70,secondhalf,Two Contrasts Shared,0.6875,0.6875,16,0,0
+35,70,secondhalf,Two Contrasts Privileged,0.8888888888888888,0.2222222222222222,9,0,0
+35,70,secondhalf,One Contrast,1,0.2222222222222222,9,0,0
+36,72,firsthalf,Two Contrasts Shared,0.7857142857142857,0.35714285714285715,14,0,0
+36,72,firsthalf,Two Contrasts Privileged,1,0.14285714285714285,7,0,0
+36,72,firsthalf,One Contrast,0.8333333333333334,0.3333333333333333,6,0,0
+36,72,secondhalf,Two Contrasts Shared,0.8,0.5333333333333333,15,0,0
+36,72,secondhalf,Two Contrasts Privileged,0.8888888888888888,0.1111111111111111,9,0,0
+36,72,secondhalf,One Contrast,1,0.25,8,0,0
+36,73,firsthalf,Two Contrasts Shared,0.7142857142857143,0.5,14,0,0
+36,73,firsthalf,Two Contrasts Privileged,0.2,0.6,5,0,0
+36,73,firsthalf,One Contrast,0.8571428571428571,0.5714285714285714,7,0,0
+36,73,secondhalf,Two Contrasts Shared,0.8,0.4666666666666667,15,0,0
+36,73,secondhalf,Two Contrasts Privileged,1,0.5714285714285714,7,0,0
+36,73,secondhalf,One Contrast,1,0,8,0,0
+38,76,firsthalf,Two Contrasts Shared,0.5555555555555556,0.4444444444444444,9,0,0
+38,76,firsthalf,Two Contrasts Privileged,1,0,2,0,0
+38,76,firsthalf,One Contrast,1,0.5,4,0,0
+38,76,secondhalf,Two Contrasts Shared,0.8,0.4,10,0,0
+38,76,secondhalf,Two Contrasts Privileged,0.75,0.25,4,0,0
+38,76,secondhalf,One Contrast,1,0.4,5,0,0
+38,77,firsthalf,Two Contrasts Shared,0.8461538461538461,0.3076923076923077,13,0,0
+38,77,firsthalf,Two Contrasts Privileged,1,0.3333333333333333,6,0,0
+38,77,firsthalf,One Contrast,0.8571428571428571,0.2857142857142857,7,0,0
+38,77,secondhalf,Two Contrasts Shared,0.8,0.7333333333333333,15,0,0
+38,77,secondhalf,Two Contrasts Privileged,0.875,0.375,8,0,0
+38,77,secondhalf,One Contrast,0.5555555555555556,0.2222222222222222,9,0,0
+39,78,firsthalf,Two Contrasts Shared,0.9230769230769231,0.3076923076923077,13,0,0
+39,78,firsthalf,Two Contrasts Privileged,0.8571428571428571,0.5714285714285714,7,0,0
+39,78,firsthalf,One Contrast,0.5714285714285714,0.14285714285714285,7,0,0
+39,78,secondhalf,Two Contrasts Shared,0.8571428571428571,0.35714285714285715,14,0,0
+39,78,secondhalf,Two Contrasts Privileged,0.75,0.125,8,0,0
+39,78,secondhalf,One Contrast,0.75,0.25,8,0,0
+39,79,firsthalf,Two Contrasts Shared,0.9285714285714286,0.5714285714285714,14,0,0
+39,79,firsthalf,Two Contrasts Privileged,1,0.5714285714285714,7,0,0
+39,79,firsthalf,One Contrast,1,0.3333333333333333,6,0,0
+39,79,secondhalf,Two Contrasts Shared,0.9375,0.375,16,0,0
+39,79,secondhalf,Two Contrasts Privileged,0.5,0.5,8,0,0
+39,79,secondhalf,One Contrast,1,0.375,8,0,0
+41,82,firsthalf,Two Contrasts Shared,0.8571428571428571,0.6428571428571429,14,0,0
+41,82,firsthalf,Two Contrasts Privileged,0.8571428571428571,0.42857142857142855,7,0,0
+41,82,firsthalf,One Contrast,1,0.2857142857142857,7,0,0
+41,82,secondhalf,Two Contrasts Shared,0.9375,0.625,16,0,0
+41,82,secondhalf,Two Contrasts Privileged,0.8888888888888888,0.4444444444444444,9,0,0
+41,82,secondhalf,One Contrast,0.8888888888888888,0.4444444444444444,9,0,0
+41,83,firsthalf,Two Contrasts Shared,0.8571428571428571,0.6428571428571429,14,0,0
+41,83,firsthalf,Two Contrasts Privileged,1,0.3333333333333333,6,0,0
+41,83,firsthalf,One Contrast,1,0.3333333333333333,6,0,0
+41,83,secondhalf,Two Contrasts Shared,0.7333333333333333,0.5333333333333333,15,0,0
+41,83,secondhalf,Two Contrasts Privileged,0.75,0.375,8,0,0
+41,83,secondhalf,One Contrast,0.875,0.25,8,0,0
+42,84,firsthalf,Two Contrasts Shared,0.5714285714285714,0.5,14,0,0
+42,84,firsthalf,Two Contrasts Privileged,0.8333333333333334,0.6666666666666666,6,0,0
+42,84,firsthalf,One Contrast,1,0.5714285714285714,7,0,0
+42,84,secondhalf,Two Contrasts Shared,0.75,0.375,16,0,0
+42,84,secondhalf,Two Contrasts Privileged,1,0.42857142857142855,7,0,0
+42,84,secondhalf,One Contrast,0.8888888888888888,0.1111111111111111,9,0,0
+42,85,firsthalf,Two Contrasts Shared,0.8571428571428571,0.42857142857142855,14,0,0
+42,85,firsthalf,Two Contrasts Privileged,1,0.42857142857142855,7,0,0
+42,85,firsthalf,One Contrast,1,0,7,0,0
+42,85,secondhalf,Two Contrasts Shared,0.8125,0.75,16,0,0
+42,85,secondhalf,Two Contrasts Privileged,1,0.5,8,0,0
+42,85,secondhalf,One Contrast,1,0.3333333333333333,9,0,0
+43,86,firsthalf,Two Contrasts Shared,0.6153846153846154,0.6153846153846154,13,0,0
+43,86,firsthalf,Two Contrasts Privileged,0.8333333333333334,0.5,6,0,0
+43,86,firsthalf,One Contrast,1,0.4,5,0,0
+43,86,secondhalf,Two Contrasts Shared,0.8,0.3333333333333333,15,0,0
+43,86,secondhalf,Two Contrasts Privileged,0.625,0.75,8,0,0
+43,86,secondhalf,One Contrast,1,0.2857142857142857,7,0,0
+43,87,firsthalf,Two Contrasts Shared,0.75,0.5,12,0,0
+43,87,firsthalf,Two Contrasts Privileged,0.8,0.8,5,0,0
+43,87,firsthalf,One Contrast,0.8333333333333334,0.3333333333333333,6,0,0
+43,87,secondhalf,Two Contrasts Shared,0.8461538461538461,0.46153846153846156,13,0,0
+43,87,secondhalf,Two Contrasts Privileged,0.8333333333333334,0.16666666666666666,6,0,0
+43,87,secondhalf,One Contrast,1,0.5714285714285714,7,0,0
+44,88,firsthalf,Two Contrasts Shared,0.6363636363636364,0.5454545454545454,11,0,0
+44,88,firsthalf,Two Contrasts Privileged,0.8333333333333334,0.6666666666666666,6,0,0
+44,88,firsthalf,One Contrast,1,0.6,5,0,0
+44,88,secondhalf,Two Contrasts Shared,0.5384615384615384,0.38461538461538464,13,0,0
+44,88,secondhalf,Two Contrasts Privileged,0.8571428571428571,0.5714285714285714,7,0,0
+44,88,secondhalf,One Contrast,0.7142857142857143,0.5714285714285714,7,0,0
+44,89,firsthalf,Two Contrasts Shared,0.75,0.75,12,0,0
+44,89,firsthalf,Two Contrasts Privileged,1,0.6,5,0,0
+44,89,firsthalf,One Contrast,1,0.2,5,0,0
+44,89,secondhalf,Two Contrasts Shared,0.8461538461538461,0.38461538461538464,13,0,0
+44,89,secondhalf,Two Contrasts Privileged,0.8333333333333334,0.5,6,0,0
+44,89,secondhalf,One Contrast,1,0.5714285714285714,7,0,0
+46,92,firsthalf,Two Contrasts Shared,0.6666666666666666,0.3333333333333333,12,0,0
+46,92,firsthalf,Two Contrasts Privileged,0.16666666666666666,1,6,0,0
+46,92,firsthalf,One Contrast,1,0.6666666666666666,6,0,0
+46,92,secondhalf,Two Contrasts Shared,0.5,0.8571428571428571,14,0,0
+46,92,secondhalf,Two Contrasts Privileged,0.75,0.625,8,0,0
+46,92,secondhalf,One Contrast,0.8571428571428571,0.42857142857142855,7,0,0
+46,93,firsthalf,Two Contrasts Shared,0.6153846153846154,0.38461538461538464,13,0,0
+46,93,firsthalf,Two Contrasts Privileged,0.8,0.4,5,0,0
+46,93,firsthalf,One Contrast,1,0.5,4,0,0
+46,93,secondhalf,Two Contrasts Shared,0.8571428571428571,0.2857142857142857,14,0,0
+46,93,secondhalf,Two Contrasts Privileged,0.8333333333333334,0.6666666666666666,6,0,0
+46,93,secondhalf,One Contrast,1,0.3333333333333333,6,0,0
+47,94,firsthalf,Two Contrasts Shared,0.46153846153846156,0.07692307692307693,13,0,0
+47,94,firsthalf,Two Contrasts Privileged,0.42857142857142855,0.7142857142857143,7,0,0
+47,94,firsthalf,One Contrast,0.4,0.2,5,0,0
+47,94,secondhalf,Two Contrasts Shared,0.42857142857142855,0.42857142857142855,14,0,0
+47,94,secondhalf,Two Contrasts Privileged,0.375,0.25,8,0,0
+47,94,secondhalf,One Contrast,0.2857142857142857,0,7,0,0
+47,95,firsthalf,Two Contrasts Shared,0.75,0.5,12,0,0
+47,95,firsthalf,Two Contrasts Privileged,0.75,0.25,4,0,0
+47,95,firsthalf,One Contrast,1,0.16666666666666666,6,0,0
+47,95,secondhalf,Two Contrasts Shared,0.8571428571428571,0.5,14,0,0
+47,95,secondhalf,Two Contrasts Privileged,1,0.6666666666666666,6,0,0
+47,95,secondhalf,One Contrast,1,0.25,8,0,0
+48,96,firsthalf,Two Contrasts Shared,0.75,0.375,8,0,0
+48,96,firsthalf,Two Contrasts Privileged,1,0.3333333333333333,6,0,0
+48,96,firsthalf,One Contrast,1,1,3,0,0
+48,96,secondhalf,Two Contrasts Shared,0.7777777777777778,0.1111111111111111,9,0,0
+48,96,secondhalf,Two Contrasts Privileged,0.8571428571428571,0.2857142857142857,7,0,0
+48,96,secondhalf,One Contrast,0.25,0.5,4,0,0
+48,97,firsthalf,Two Contrasts Shared,1,0.6666666666666666,6,0,0
+48,97,firsthalf,Two Contrasts Privileged,0.75,0.5,4,0,0
+48,97,firsthalf,One Contrast,1,0,2,0,0
+48,97,secondhalf,Two Contrasts Shared,0.7142857142857143,0.7142857142857143,7,0,0
+48,97,secondhalf,Two Contrasts Privileged,0.8,0.4,5,0,0
+48,97,secondhalf,One Contrast,1,0,4,0,0
+49,98,firsthalf,Two Contrasts Shared,0.46153846153846156,0.46153846153846156,13,0,0
+49,98,firsthalf,Two Contrasts Privileged,0.42857142857142855,0.14285714285714285,7,0,0
+49,98,firsthalf,One Contrast,0.8333333333333334,0.16666666666666666,6,0,0
+49,98,secondhalf,Two Contrasts Shared,0.6,0.06666666666666667,15,0,0
+49,98,secondhalf,Two Contrasts Privileged,0.5555555555555556,0.5555555555555556,9,0,0
+49,98,secondhalf,One Contrast,0.8571428571428571,0.14285714285714285,7,0,0
+49,99,firsthalf,Two Contrasts Shared,0.6428571428571429,0.5,14,0,0
+49,99,firsthalf,Two Contrasts Privileged,0.6666666666666666,0.6666666666666666,6,0,0
+49,99,firsthalf,One Contrast,0.6666666666666666,1,6,0,0
+49,99,secondhalf,Two Contrasts Shared,0.6875,0.4375,16,0,0
+49,99,secondhalf,Two Contrasts Privileged,0.8571428571428571,0.42857142857142855,7,0,0
+49,99,secondhalf,One Contrast,0.75,0.125,8,0,0
+50,100,firsthalf,Two Contrasts Shared,0.8666666666666667,0.6666666666666666,15,0,0
+50,100,firsthalf,Two Contrasts Privileged,0.8571428571428571,0.5714285714285714,7,0,0
+50,100,firsthalf,One Contrast,1,0,7,0,0
+50,100,secondhalf,Two Contrasts Shared,0.7647058823529411,0.5294117647058824,17,0,0
+50,100,secondhalf,Two Contrasts Privileged,0.6666666666666666,0.7777777777777778,9,0,0
+50,100,secondhalf,One Contrast,1,0.5555555555555556,9,0,0
+50,101,firsthalf,Two Contrasts Shared,0.6363636363636364,0.6363636363636364,11,0,0
+50,101,firsthalf,Two Contrasts Privileged,0.6,0.8,5,0,0
+50,101,firsthalf,One Contrast,1,0.42857142857142855,7,0,0
+50,101,secondhalf,Two Contrasts Shared,0.6923076923076923,0.38461538461538464,13,0,0
+50,101,secondhalf,Two Contrasts Privileged,1,0.5714285714285714,7,0,0
+50,101,secondhalf,One Contrast,0.875,0.5,8,0,0
+51,102,firsthalf,Two Contrasts Shared,1,0.2727272727272727,11,0,0
+51,102,firsthalf,Two Contrasts Privileged,0.6666666666666666,0.8333333333333334,6,0,0
+51,102,firsthalf,One Contrast,0.75,0.5,4,0,0
+51,102,secondhalf,Two Contrasts Shared,0.8333333333333334,0.4166666666666667,12,0,0
+51,102,secondhalf,Two Contrasts Privileged,0.875,0.25,8,0,0
+51,102,secondhalf,One Contrast,0.8333333333333334,0.3333333333333333,6,0,0
+51,103,firsthalf,Two Contrasts Shared,0.9166666666666666,0.5833333333333334,12,0,0
+51,103,firsthalf,Two Contrasts Privileged,0.8333333333333334,0.5,6,0,0
+51,103,firsthalf,One Contrast,0.6,0.2,5,0,0
+51,103,secondhalf,Two Contrasts Shared,0.8571428571428571,0.21428571428571427,14,0,0
+51,103,secondhalf,Two Contrasts Privileged,1,0.14285714285714285,7,0,0
+51,103,secondhalf,One Contrast,1,0.5,6,0,0
+52,104,firsthalf,Two Contrasts Shared,0.8,0.5333333333333333,15,0,0
+52,104,firsthalf,Two Contrasts Privileged,1,0.5714285714285714,7,0,0
+52,104,firsthalf,One Contrast,0.8571428571428571,0.2857142857142857,7,0,0
+52,104,secondhalf,Two Contrasts Shared,0.625,0.4375,16,0,0
+52,104,secondhalf,Two Contrasts Privileged,0.875,0.375,8,0,0
+52,104,secondhalf,One Contrast,0.8888888888888888,0.2222222222222222,9,0,0
+52,105,firsthalf,Two Contrasts Shared,0.75,0.9166666666666666,12,0,0
+52,105,firsthalf,Two Contrasts Privileged,0.8333333333333334,0.3333333333333333,6,0,0
+52,105,firsthalf,One Contrast,1,0,6,0,0
+52,105,secondhalf,Two Contrasts Shared,0.8571428571428571,0.6428571428571429,14,0,0
+52,105,secondhalf,Two Contrasts Privileged,0.5714285714285714,0.42857142857142855,7,0,0
+52,105,secondhalf,One Contrast,0.8571428571428571,0.5714285714285714,7,0,0
+53,106,firsthalf,Two Contrasts Shared,0.8333333333333334,0.4166666666666667,12,0,0
+53,106,firsthalf,Two Contrasts Privileged,0.8,0.6,5,0,0
+53,106,firsthalf,One Contrast,1,0.3333333333333333,6,0,0
+53,106,secondhalf,Two Contrasts Shared,0.5,0.7857142857142857,14,0,0
+53,106,secondhalf,Two Contrasts Privileged,1,0.5714285714285714,7,0,0
+53,106,secondhalf,One Contrast,1,0.25,8,0,0
+53,107,firsthalf,Two Contrasts Shared,0.9230769230769231,0.23076923076923078,13,0,0
+53,107,firsthalf,Two Contrasts Privileged,1,0.2857142857142857,7,0,0
+53,107,firsthalf,One Contrast,1,0.3333333333333333,6,0,0
+53,107,secondhalf,Two Contrasts Shared,0.2857142857142857,0.2857142857142857,14,0,0
+53,107,secondhalf,Two Contrasts Privileged,0.75,0.375,8,0,0
+53,107,secondhalf,One Contrast,0.5,0.5,8,0,0
+54,108,firsthalf,Two Contrasts Shared,1,0.6428571428571429,14,0,0
+54,108,firsthalf,Two Contrasts Privileged,0.6666666666666666,0.3333333333333333,6,0,0
+54,108,firsthalf,One Contrast,0.5714285714285714,0.5714285714285714,7,0,0
+54,108,secondhalf,Two Contrasts Shared,0.7333333333333333,0.4666666666666667,15,0,0
+54,108,secondhalf,Two Contrasts Privileged,0.875,0.25,8,0,0
+54,108,secondhalf,One Contrast,0.4444444444444444,0.6666666666666666,9,0,0
+54,109,firsthalf,Two Contrasts Shared,0.6666666666666666,0.5555555555555556,9,0,0
+54,109,firsthalf,Two Contrasts Privileged,0.8333333333333334,1,6,0,0
+54,109,firsthalf,One Contrast,0.5,0.5,6,0,0
+54,109,secondhalf,Two Contrasts Shared,0.9090909090909091,0.18181818181818182,11,0,0
+54,109,secondhalf,Two Contrasts Privileged,1,0.42857142857142855,7,0,0
+54,109,secondhalf,One Contrast,0.75,0.375,8,0,0
+55,110,firsthalf,Two Contrasts Shared,0.6428571428571429,0.5,14,0,0
+55,110,firsthalf,Two Contrasts Privileged,1,0.42857142857142855,7,0,0
+55,110,firsthalf,One Contrast,1,0.2857142857142857,7,0,0
+55,110,secondhalf,Two Contrasts Shared,0.8125,0.5,16,0,0
+55,110,secondhalf,Two Contrasts Privileged,0.8888888888888888,0.3333333333333333,9,0,0
+55,110,secondhalf,One Contrast,1,0.2222222222222222,9,0,0
+55,111,firsthalf,Two Contrasts Shared,0.8571428571428571,0.5714285714285714,14,0,0
+55,111,firsthalf,Two Contrasts Privileged,0.8333333333333334,0.5,6,0,0
+55,111,firsthalf,One Contrast,0.7142857142857143,0.5714285714285714,7,0,0
+55,111,secondhalf,Two Contrasts Shared,0.8,0.6666666666666666,15,0,0
+55,111,secondhalf,Two Contrasts Privileged,0.875,0.625,8,0,0
+55,111,secondhalf,One Contrast,0.6666666666666666,0.1111111111111111,9,0,0
+56,112,firsthalf,Two Contrasts Shared,0.6153846153846154,0.5384615384615384,13,0,0
+56,112,firsthalf,Two Contrasts Privileged,0.5714285714285714,0.5714285714285714,7,0,0
+56,112,firsthalf,One Contrast,1,0.4,5,0,0
+56,112,secondhalf,Two Contrasts Shared,0.7333333333333333,0.5333333333333333,15,0,0
+56,112,secondhalf,Two Contrasts Privileged,0.4444444444444444,0.5555555555555556,9,0,0
+56,112,secondhalf,One Contrast,0.6666666666666666,0.6666666666666666,6,0,0
+56,113,firsthalf,Two Contrasts Shared,0.5333333333333333,0.6666666666666666,15,0,0
+56,113,firsthalf,Two Contrasts Privileged,0.7142857142857143,0.42857142857142855,7,0,0
+56,113,firsthalf,One Contrast,0.8333333333333334,0.5,6,0,0
+56,113,secondhalf,Two Contrasts Shared,0.625,0.5,16,0,0
+56,113,secondhalf,Two Contrasts Privileged,0.75,0.125,8,0,0
+56,113,secondhalf,One Contrast,0.875,0.5,8,0,0
+57,114,firsthalf,Two Contrasts Shared,0.8333333333333334,0.4166666666666667,12,0,0
+57,114,firsthalf,Two Contrasts Privileged,0.8,0.6,5,0,0
+57,114,firsthalf,One Contrast,1,0.2,5,0,0
+57,114,secondhalf,Two Contrasts Shared,0.9230769230769231,0.38461538461538464,13,0,0
+57,114,secondhalf,Two Contrasts Privileged,0.6666666666666666,0.5,6,0,0
+57,114,secondhalf,One Contrast,0.8571428571428571,0,7,0,0
+57,115,firsthalf,Two Contrasts Shared,0.9285714285714286,0.42857142857142855,14,0,0
+57,115,firsthalf,Two Contrasts Privileged,0.8571428571428571,0.7142857142857143,7,0,0
+57,115,firsthalf,One Contrast,0.8333333333333334,0,6,0,0
+57,115,secondhalf,Two Contrasts Shared,0.7333333333333333,0.5333333333333333,15,0,0
+57,115,secondhalf,Two Contrasts Privileged,1,0.375,8,0,0
+57,115,secondhalf,One Contrast,1,0.375,8,0,0
+58,116,firsthalf,Two Contrasts Shared,0.8,0.2,10,0,0
+58,116,firsthalf,Two Contrasts Privileged,0.6666666666666666,0.6666666666666666,3,0,0
+58,116,firsthalf,One Contrast,1,0.75,4,0,0
+58,116,secondhalf,Two Contrasts Shared,0.5833333333333334,0.3333333333333333,12,0,0
+58,116,secondhalf,Two Contrasts Privileged,1,0.2,5,0,0
+58,116,secondhalf,One Contrast,1,0.16666666666666666,6,0,0
+58,117,firsthalf,Two Contrasts Shared,0.8181818181818182,0.45454545454545453,11,0,0
+58,117,firsthalf,Two Contrasts Privileged,0.6,0.6,5,0,0
+58,117,firsthalf,One Contrast,1,0.2,5,0,0
+58,117,secondhalf,Two Contrasts Shared,0.8461538461538461,0.5384615384615384,13,0,0
+58,117,secondhalf,Two Contrasts Privileged,0.7142857142857143,0.42857142857142855,7,0,0
+58,117,secondhalf,One Contrast,0.8571428571428571,0.5714285714285714,7,0,0
+59,118,firsthalf,Two Contrasts Shared,0.9230769230769231,0.46153846153846156,13,0,0
+59,118,firsthalf,Two Contrasts Privileged,1,0.8333333333333334,6,0,0
+59,118,firsthalf,One Contrast,1,0.14285714285714285,7,0,0
+59,118,secondhalf,Two Contrasts Shared,0.7142857142857143,0.5714285714285714,14,0,0
+59,118,secondhalf,Two Contrasts Privileged,0.875,0.625,8,0,0
+59,118,secondhalf,One Contrast,0.7777777777777778,0.5555555555555556,9,0,0
+59,119,firsthalf,Two Contrasts Shared,0.8461538461538461,0.38461538461538464,13,0,0
+59,119,firsthalf,Two Contrasts Privileged,0.8333333333333334,0.5,6,0,0
+59,119,firsthalf,One Contrast,0.7142857142857143,0.42857142857142855,7,0,0
+59,119,secondhalf,Two Contrasts Shared,0.7857142857142857,0.07142857142857142,14,0,0
+59,119,secondhalf,Two Contrasts Privileged,0.7142857142857143,0.14285714285714285,7,0,0
+59,119,secondhalf,One Contrast,0.75,0.25,8,0,0
+60,120,firsthalf,Two Contrasts Shared,0.9230769230769231,0.38461538461538464,13,0,0
+60,120,firsthalf,Two Contrasts Privileged,0.8,0.6,5,0,0
+60,120,firsthalf,One Contrast,1,0.42857142857142855,7,0,0
+60,120,secondhalf,Two Contrasts Shared,0.7142857142857143,0.21428571428571427,14,0,0
+60,120,secondhalf,Two Contrasts Privileged,0.7142857142857143,0.42857142857142855,7,0,0
+60,120,secondhalf,One Contrast,0.875,0.375,8,0,0
+60,121,firsthalf,Two Contrasts Shared,0.6923076923076923,0.3076923076923077,13,0,0
+60,121,firsthalf,Two Contrasts Privileged,0.6666666666666666,0.6666666666666666,6,0,0
+60,121,firsthalf,One Contrast,1,0,7,0,0
+60,121,secondhalf,Two Contrasts Shared,0.6666666666666666,0.5333333333333333,15,0,0
+60,121,secondhalf,Two Contrasts Privileged,0.75,0.125,8,0,0
+60,121,secondhalf,One Contrast,1,0.3333333333333333,9,0,0
+61,122,firsthalf,Two Contrasts Shared,0.6153846153846154,0.5384615384615384,13,0,0
+61,122,firsthalf,Two Contrasts Privileged,0.8571428571428571,0.42857142857142855,7,0,0
+61,122,firsthalf,One Contrast,1,0.16666666666666666,6,0,0
+61,122,secondhalf,Two Contrasts Shared,0.8666666666666667,0.4,15,0,0
+61,122,secondhalf,Two Contrasts Privileged,0.4444444444444444,0.5555555555555556,9,0,0
+61,122,secondhalf,One Contrast,0.875,0,8,0,0
+61,123,firsthalf,Two Contrasts Shared,0.7857142857142857,0.5,14,0,0
+61,123,firsthalf,Two Contrasts Privileged,0.7142857142857143,0.5714285714285714,7,0,0
+61,123,firsthalf,One Contrast,1,0.3333333333333333,6,0,0
+61,123,secondhalf,Two Contrasts Shared,0.7333333333333333,0.3333333333333333,15,0,0
+61,123,secondhalf,Two Contrasts Privileged,0.875,0.25,8,0,0
+61,123,secondhalf,One Contrast,0.875,0.375,8,0,0
+62,124,firsthalf,Two Contrasts Shared,0.75,0.4166666666666667,12,0,0
+62,124,firsthalf,Two Contrasts Privileged,0.8333333333333334,0.5,6,0,0
+62,124,firsthalf,One Contrast,0.8333333333333334,0,6,0,0
+62,124,secondhalf,Two Contrasts Shared,0.7857142857142857,0.2857142857142857,14,0,0
+62,124,secondhalf,Two Contrasts Privileged,1,0.25,8,0,0
+62,124,secondhalf,One Contrast,0.75,0.25,8,0,0
+62,125,firsthalf,Two Contrasts Shared,0.7692307692307693,0.5384615384615384,13,0,0
+62,125,firsthalf,Two Contrasts Privileged,1,0,5,0,0
+62,125,firsthalf,One Contrast,0.8571428571428571,0.2857142857142857,7,0,0
+62,125,secondhalf,Two Contrasts Shared,0.9333333333333333,0.4666666666666667,15,0,0
+62,125,secondhalf,Two Contrasts Privileged,0.8333333333333334,0.3333333333333333,6,0,0
+62,125,secondhalf,One Contrast,0.75,0.375,8,0,0
+63,126,firsthalf,Two Contrasts Shared,0.8,0.4666666666666667,15,0,0
+63,126,firsthalf,Two Contrasts Privileged,0.5,0.6666666666666666,6,0,0
+63,126,firsthalf,One Contrast,0.8571428571428571,0.14285714285714285,7,0,0
+63,126,secondhalf,Two Contrasts Shared,0.75,0.375,16,0,0
+63,126,secondhalf,Two Contrasts Privileged,0.625,0.625,8,0,0
+63,126,secondhalf,One Contrast,0.7777777777777778,0.1111111111111111,9,0,0
+63,127,firsthalf,Two Contrasts Shared,0.8,0.4,15,0,0
+63,127,firsthalf,Two Contrasts Privileged,1,0.2857142857142857,7,0,0
+63,127,firsthalf,One Contrast,1,0.16666666666666666,6,0,0
+63,127,secondhalf,Two Contrasts Shared,0.8125,0.375,16,0,0
+63,127,secondhalf,Two Contrasts Privileged,0.625,0.375,8,0,0
+63,127,secondhalf,One Contrast,0.875,0.125,8,0,0
+64,128,firsthalf,Two Contrasts Shared,0.9090909090909091,0.36363636363636365,11,0,0
+64,128,firsthalf,Two Contrasts Privileged,0.8571428571428571,0.42857142857142855,7,0,0
+64,128,firsthalf,One Contrast,0.5,0.5,4,0,0
+64,128,secondhalf,Two Contrasts Shared,0.8461538461538461,0.3076923076923077,13,0,0
+64,128,secondhalf,Two Contrasts Privileged,0.5,0.5,8,0,0
+64,128,secondhalf,One Contrast,0.8,0,5,0,0
+64,129,firsthalf,Two Contrasts Shared,0.8333333333333334,0.5833333333333334,12,0,0
+64,129,firsthalf,Two Contrasts Privileged,1,0.4,5,0,0
+64,129,firsthalf,One Contrast,0.6,0.6,5,0,0
+64,129,secondhalf,Two Contrasts Shared,0.8571428571428571,0.5714285714285714,14,0,0
+64,129,secondhalf,Two Contrasts Privileged,0.8333333333333334,0.5,6,0,0
+64,129,secondhalf,One Contrast,0.5,0.5,6,0,0
+65,130,firsthalf,Two Contrasts Shared,0.7692307692307693,0.46153846153846156,13,0,0
+65,130,firsthalf,Two Contrasts Privileged,1,0.16666666666666666,6,0,0
+65,130,firsthalf,One Contrast,0.5714285714285714,0.5714285714285714,7,0,0
+65,130,secondhalf,Two Contrasts Shared,0.8666666666666667,0.4,15,0,0
+65,130,secondhalf,Two Contrasts Privileged,0.5714285714285714,0.5714285714285714,7,0,0
+65,130,secondhalf,One Contrast,0.75,0.5,8,0,0
+65,131,firsthalf,Two Contrasts Shared,1,0.3333333333333333,12,0,0
+65,131,firsthalf,Two Contrasts Privileged,0.8333333333333334,0.16666666666666666,6,0,0
+65,131,firsthalf,One Contrast,0.5714285714285714,0.42857142857142855,7,0,0
+65,131,secondhalf,Two Contrasts Shared,0.6153846153846154,0.38461538461538464,13,0,0
+65,131,secondhalf,Two Contrasts Privileged,0.875,0.375,8,0,0
+65,131,secondhalf,One Contrast,0.75,0.25,8,0,0
+66,132,firsthalf,Two Contrasts Shared,0.75,0.3333333333333333,12,0,0
+66,132,firsthalf,Two Contrasts Privileged,0.4,0.6,5,0,0
+66,132,firsthalf,One Contrast,1,0.6,5,0,0
+66,132,secondhalf,Two Contrasts Shared,0.7692307692307693,0.3076923076923077,13,0,0
+66,132,secondhalf,Two Contrasts Privileged,0.8571428571428571,0.14285714285714285,7,0,0
+66,132,secondhalf,One Contrast,0.7142857142857143,0,7,0,0
+66,133,firsthalf,Two Contrasts Shared,0.75,0.5833333333333334,12,0,0
+66,133,firsthalf,Two Contrasts Privileged,0.8,1,5,0,0
+66,133,firsthalf,One Contrast,0.8,0.6,5,0,0
+66,133,secondhalf,Two Contrasts Shared,0.5384615384615384,0.38461538461538464,13,0,0
+66,133,secondhalf,Two Contrasts Privileged,0.5,0.16666666666666666,6,0,0
+66,133,secondhalf,One Contrast,0.8333333333333334,0,6,0,0
+67,134,firsthalf,Two Contrasts Shared,0.9285714285714286,0.5,14,0,0
+67,134,firsthalf,Two Contrasts Privileged,0.8571428571428571,0.14285714285714285,7,0,0
+67,134,firsthalf,One Contrast,0.8571428571428571,0.42857142857142855,7,0,0
+67,134,secondhalf,Two Contrasts Shared,0.9333333333333333,0.5333333333333333,15,0,0
+67,134,secondhalf,Two Contrasts Privileged,0.875,0.625,8,0,0
+67,134,secondhalf,One Contrast,0.875,0.5,8,0,0
+67,135,firsthalf,Two Contrasts Shared,0.9285714285714286,0.7857142857142857,14,0,0
+67,135,firsthalf,Two Contrasts Privileged,0.8571428571428571,0.5714285714285714,7,0,0
+67,135,firsthalf,One Contrast,1,0.42857142857142855,7,0,0
+67,135,secondhalf,Two Contrasts Shared,0.8666666666666667,0.5333333333333333,15,0,0
+67,135,secondhalf,Two Contrasts Privileged,0.6666666666666666,0.5555555555555556,9,0,0
+67,135,secondhalf,One Contrast,1,0.125,8,0,0
+69,138,firsthalf,Two Contrasts Shared,0.8,0.3,10,0,0
+69,138,firsthalf,Two Contrasts Privileged,1,0.5,6,0,0
+69,138,firsthalf,One Contrast,0.8,0,5,0,0
+69,138,secondhalf,Two Contrasts Shared,0.7272727272727273,0.2727272727272727,11,0,0
+69,138,secondhalf,Two Contrasts Privileged,0.8571428571428571,0.5714285714285714,7,0,0
+69,138,secondhalf,One Contrast,1,0.42857142857142855,7,0,0
+69,139,firsthalf,Two Contrasts Shared,0.5,0.5,14,0,0
+69,139,firsthalf,Two Contrasts Privileged,0.5714285714285714,0.2857142857142857,7,0,0
+69,139,firsthalf,One Contrast,0.8333333333333334,0.3333333333333333,6,0,0
+69,139,secondhalf,Two Contrasts Shared,0.8,0.26666666666666666,15,0,0
+69,139,secondhalf,Two Contrasts Privileged,0.5,0.25,8,0,0
+69,139,secondhalf,One Contrast,0.5,0.25,8,0,0
+70,140,firsthalf,Two Contrasts Shared,0.6,0.6,15,0,0
+70,140,firsthalf,Two Contrasts Privileged,0.42857142857142855,0.8571428571428571,7,0,0
+70,140,firsthalf,One Contrast,0.5714285714285714,0.42857142857142855,7,0,0
+70,140,secondhalf,Two Contrasts Shared,0.5625,0.375,16,0,0
+70,140,secondhalf,Two Contrasts Privileged,0.5555555555555556,0.5555555555555556,9,0,0
+70,140,secondhalf,One Contrast,0.625,0.75,8,0,0
+70,141,firsthalf,Two Contrasts Shared,0.8333333333333334,0.5,12,0,0
+70,141,firsthalf,Two Contrasts Privileged,0.75,0.75,4,0,0
+70,141,firsthalf,One Contrast,1,0,5,0,0
+70,141,secondhalf,Two Contrasts Shared,0.8461538461538461,0.7692307692307693,13,0,0
+70,141,secondhalf,Two Contrasts Privileged,1,0.3333333333333333,6,0,0
+70,141,secondhalf,One Contrast,0.7142857142857143,0.2857142857142857,7,0,0
+72,144,firsthalf,Two Contrasts Shared,0.9166666666666666,0.4166666666666667,12,0,0
+72,144,firsthalf,Two Contrasts Privileged,0.8,0.4,5,0,0
+72,144,firsthalf,One Contrast,1,0.16666666666666666,6,0,0
+72,144,secondhalf,Two Contrasts Shared,0.8461538461538461,0.3076923076923077,13,0,0
+72,144,secondhalf,Two Contrasts Privileged,0.8571428571428571,0.42857142857142855,7,0,0
+72,144,secondhalf,One Contrast,0.5,0.375,8,0,0
+72,145,firsthalf,Two Contrasts Shared,0.9285714285714286,0.5,14,0,0
+72,145,firsthalf,Two Contrasts Privileged,1,0.14285714285714285,7,0,0
+72,145,firsthalf,One Contrast,1,0.2857142857142857,7,0,0
+72,145,secondhalf,Two Contrasts Shared,0.8666666666666667,0.6666666666666666,15,0,0
+72,145,secondhalf,Two Contrasts Privileged,0.875,0.375,8,0,0
+72,145,secondhalf,One Contrast,0.875,0.25,8,0,0
+74,148,firsthalf,Two Contrasts Shared,1,0.38461538461538464,13,0,0
+74,148,firsthalf,Two Contrasts Privileged,0.8333333333333334,0.3333333333333333,6,0,0
+74,148,firsthalf,One Contrast,0.8333333333333334,0.5,6,0,0
+74,148,secondhalf,Two Contrasts Shared,0.7857142857142857,0.14285714285714285,14,0,0
+74,148,secondhalf,Two Contrasts Privileged,0.875,0.25,8,0,0
+74,148,secondhalf,One Contrast,1,0.5714285714285714,7,0,0
+74,149,firsthalf,Two Contrasts Shared,0.8571428571428571,0.6428571428571429,14,0,0
+74,149,firsthalf,Two Contrasts Privileged,0.6666666666666666,1,6,0,0
+74,149,firsthalf,One Contrast,0.7142857142857143,0.7142857142857143,7,0,0
+74,149,secondhalf,Two Contrasts Shared,0.8125,0.375,16,0,0
+74,149,secondhalf,Two Contrasts Privileged,0.75,0.5,8,0,0
+74,149,secondhalf,One Contrast,0.8888888888888888,0.3333333333333333,9,0,0
+75,150,firsthalf,Two Contrasts Shared,0.6153846153846154,0.46153846153846156,13,0,0
+75,150,firsthalf,Two Contrasts Privileged,0.8333333333333334,0.3333333333333333,6,0,0
+75,150,firsthalf,One Contrast,1,0,5,0,0
+75,150,secondhalf,Two Contrasts Shared,0.7142857142857143,0.5714285714285714,14,0,0
+75,150,secondhalf,Two Contrasts Privileged,0.75,0.5,8,0,0
+75,150,secondhalf,One Contrast,0.8333333333333334,0.5,6,0,0
+75,151,firsthalf,Two Contrasts Shared,0.8333333333333334,0.5,12,0,0
+75,151,firsthalf,Two Contrasts Privileged,1,0.6666666666666666,6,0,0
+75,151,firsthalf,One Contrast,0.8333333333333334,0.3333333333333333,6,0,0
+75,151,secondhalf,Two Contrasts Shared,0.7692307692307693,0.15384615384615385,13,0,0
+75,151,secondhalf,Two Contrasts Privileged,0.625,0.25,8,0,0
+75,151,secondhalf,One Contrast,0.625,0.375,8,0,0
+76,152,firsthalf,Two Contrasts Shared,0.9285714285714286,0.2857142857142857,14,0,0
+76,152,firsthalf,Two Contrasts Privileged,0.8333333333333334,0.16666666666666666,6,0,0
+76,152,firsthalf,One Contrast,0.5714285714285714,0.2857142857142857,7,0,0
+76,152,secondhalf,Two Contrasts Shared,0.75,0.4375,16,0,0
+76,152,secondhalf,Two Contrasts Privileged,1,0.375,8,0,0
+76,152,secondhalf,One Contrast,0.5555555555555556,0.4444444444444444,9,0,0
+76,153,firsthalf,Two Contrasts Shared,0.7333333333333333,0.6,15,0,0
+76,153,firsthalf,Two Contrasts Privileged,0.5714285714285714,0.42857142857142855,7,0,0
+76,153,firsthalf,One Contrast,1,0.2857142857142857,7,0,0
+76,153,secondhalf,Two Contrasts Shared,0.875,0.4375,16,0,0
+76,153,secondhalf,Two Contrasts Privileged,0.375,0.5,8,0,0
+76,153,secondhalf,One Contrast,0.625,0.25,8,0,0
+77,154,firsthalf,Two Contrasts Shared,0.6666666666666666,0.5833333333333334,12,0,0
+77,154,firsthalf,Two Contrasts Privileged,0.6666666666666666,0.3333333333333333,6,0,0
+77,154,firsthalf,One Contrast,0.6666666666666666,0.6666666666666666,6,0,0
+77,154,secondhalf,Two Contrasts Shared,0.5714285714285714,0.21428571428571427,14,0,0
+77,154,secondhalf,Two Contrasts Privileged,0.5714285714285714,0.42857142857142855,7,0,0
+77,154,secondhalf,One Contrast,0.5714285714285714,0.42857142857142855,7,0,0
+77,155,firsthalf,Two Contrasts Shared,0.7142857142857143,0.6428571428571429,14,0,0
+77,155,firsthalf,Two Contrasts Privileged,1,1,6,0,0
+77,155,firsthalf,One Contrast,0.8333333333333334,0.6666666666666666,6,0,0
+77,155,secondhalf,Two Contrasts Shared,0.8,0.4666666666666667,15,0,0
+77,155,secondhalf,Two Contrasts Privileged,1,0.25,8,0,0
+77,155,secondhalf,One Contrast,0.75,0.25,8,0,0
+78,156,firsthalf,Two Contrasts Shared,0.46153846153846156,0.3076923076923077,13,0,0
+78,156,firsthalf,Two Contrasts Privileged,0.6666666666666666,0.3333333333333333,6,0,0
+78,156,firsthalf,One Contrast,0.75,0,4,0,0
+78,156,secondhalf,Two Contrasts Shared,0.7142857142857143,0.35714285714285715,14,0,0
+78,156,secondhalf,Two Contrasts Privileged,0.75,0.625,8,0,0
+78,156,secondhalf,One Contrast,0.8333333333333334,0.16666666666666666,6,0,0
+78,157,firsthalf,Two Contrasts Shared,1,0.4166666666666667,12,0,0
+78,157,firsthalf,Two Contrasts Privileged,0.8,0.6,5,0,0
+78,157,firsthalf,One Contrast,0.7142857142857143,0.5714285714285714,7,0,0
+78,157,secondhalf,Two Contrasts Shared,0.8461538461538461,0.6153846153846154,13,0,0
+78,157,secondhalf,Two Contrasts Privileged,0.7142857142857143,0.7142857142857143,7,0,0
+78,157,secondhalf,One Contrast,1,0.375,8,0,0
+79,158,firsthalf,Two Contrasts Shared,0.75,0.5833333333333334,12,0,0
+79,158,firsthalf,Two Contrasts Privileged,1,0.5714285714285714,7,0,0
+79,158,firsthalf,One Contrast,0.8571428571428571,0.2857142857142857,7,0,0
+79,158,secondhalf,Two Contrasts Shared,0.7692307692307693,0.38461538461538464,13,0,0
+79,158,secondhalf,Two Contrasts Privileged,1,0.375,8,0,0
+79,158,secondhalf,One Contrast,0.8888888888888888,0.2222222222222222,9,0,0
+79,159,firsthalf,Two Contrasts Shared,0.7692307692307693,0.46153846153846156,13,0,0
+79,159,firsthalf,Two Contrasts Privileged,0.42857142857142855,0.5714285714285714,7,0,0
+79,159,firsthalf,One Contrast,1,0.14285714285714285,7,0,0
+79,159,secondhalf,Two Contrasts Shared,0.8666666666666667,0.3333333333333333,15,0,0
+79,159,secondhalf,Two Contrasts Privileged,0.875,0,8,0,0
+79,159,secondhalf,One Contrast,0.7777777777777778,0.4444444444444444,9,0,0
+80,160,firsthalf,Two Contrasts Shared,0.9285714285714286,0.5,14,0,0
+80,160,firsthalf,Two Contrasts Privileged,1,0.2,5,0,0
+80,160,firsthalf,One Contrast,1,0.3333333333333333,6,0,0
+80,160,secondhalf,Two Contrasts Shared,0.75,0.4375,16,0,0
+80,160,secondhalf,Two Contrasts Privileged,0.8571428571428571,0.14285714285714285,7,0,0
+80,160,secondhalf,One Contrast,0.7142857142857143,0.14285714285714285,7,0,0
+80,161,firsthalf,Two Contrasts Shared,0.6153846153846154,0.46153846153846156,13,0,0
+80,161,firsthalf,Two Contrasts Privileged,0.7142857142857143,0.5714285714285714,7,0,0
+80,161,firsthalf,One Contrast,0.8,0.2,5,0,0
+80,161,secondhalf,Two Contrasts Shared,0.7857142857142857,0.42857142857142855,14,0,0
+80,161,secondhalf,Two Contrasts Privileged,0.75,0.125,8,0,0
+80,161,secondhalf,One Contrast,1,0,7,0,0
+81,162,firsthalf,Two Contrasts Shared,0.8333333333333334,0.3333333333333333,12,0,0
+81,162,firsthalf,Two Contrasts Privileged,0.8571428571428571,0.42857142857142855,7,0,0
+81,162,firsthalf,One Contrast,1,0.16666666666666666,6,0,0
+81,162,secondhalf,Two Contrasts Shared,0.9285714285714286,0.5,14,0,0
+81,162,secondhalf,Two Contrasts Privileged,0.875,0.5,8,0,0
+81,162,secondhalf,One Contrast,0.875,0.125,8,0,0
+81,163,firsthalf,Two Contrasts Shared,0.9230769230769231,0.5384615384615384,13,0,0
+81,163,firsthalf,Two Contrasts Privileged,1,0.16666666666666666,6,0,0
+81,163,firsthalf,One Contrast,1,0,6,0,0
+81,163,secondhalf,Two Contrasts Shared,0.7333333333333333,0.3333333333333333,15,0,0
+81,163,secondhalf,Two Contrasts Privileged,1,0.125,8,0,0
+81,163,secondhalf,One Contrast,0.8571428571428571,0.2857142857142857,7,0,0
+83,166,firsthalf,Two Contrasts Shared,0.8461538461538461,0.38461538461538464,13,0,0
+83,166,firsthalf,Two Contrasts Privileged,1,0.42857142857142855,7,0,0
+83,166,firsthalf,One Contrast,1,0.2857142857142857,7,0,0
+83,166,secondhalf,Two Contrasts Shared,0.8666666666666667,0.4666666666666667,15,0,0
+83,166,secondhalf,Two Contrasts Privileged,0.75,0.375,8,0,0
+83,166,secondhalf,One Contrast,1,0.25,8,0,0
+83,167,firsthalf,Two Contrasts Shared,0.7857142857142857,0.42857142857142855,14,0,0
+83,167,firsthalf,Two Contrasts Privileged,0.8333333333333334,0.8333333333333334,6,0,0
+83,167,firsthalf,One Contrast,0.6666666666666666,0.8333333333333334,6,0,0
+83,167,secondhalf,Two Contrasts Shared,0.8666666666666667,0.5333333333333333,15,0,0
+83,167,secondhalf,Two Contrasts Privileged,0.7142857142857143,0.7142857142857143,7,0,0
+83,167,secondhalf,One Contrast,0.875,0.375,8,0,0
+84,168,firsthalf,Two Contrasts Shared,0.7857142857142857,0.5714285714285714,14,0,0
+84,168,firsthalf,Two Contrasts Privileged,1,0.5,6,0,0
+84,168,firsthalf,One Contrast,1,0.3333333333333333,6,0,0
+84,168,secondhalf,Two Contrasts Shared,0.9333333333333333,0.6,15,0,0
+84,168,secondhalf,Two Contrasts Privileged,0.5714285714285714,0.5714285714285714,7,0,0
+84,168,secondhalf,One Contrast,0.875,0.5,8,0,0
+84,169,firsthalf,Two Contrasts Shared,0.7857142857142857,0.6428571428571429,14,0,0
+84,169,firsthalf,Two Contrasts Privileged,1,1,6,0,0
+84,169,firsthalf,One Contrast,0.8333333333333334,0.5,6,0,0
+84,169,secondhalf,Two Contrasts Shared,0.75,0.4375,16,0,0
+84,169,secondhalf,Two Contrasts Privileged,0.625,0.625,8,0,0
+84,169,secondhalf,One Contrast,0.7142857142857143,0.14285714285714285,7,0,0
+85,170,firsthalf,Two Contrasts Shared,0.8461538461538461,0.46153846153846156,13,0,0
+85,170,firsthalf,Two Contrasts Privileged,0.5,0.5,6,0,0
+85,170,firsthalf,One Contrast,0.8333333333333334,0.16666666666666666,6,0,0
+85,170,secondhalf,Two Contrasts Shared,0.7333333333333333,0.7333333333333333,15,0,0
+85,170,secondhalf,Two Contrasts Privileged,0.875,0.375,8,0,0
+85,170,secondhalf,One Contrast,1,0.25,8,0,0
+85,171,firsthalf,Two Contrasts Shared,0.8666666666666667,0.7333333333333333,15,0,0
+85,171,firsthalf,Two Contrasts Privileged,1,0.6666666666666666,6,0,0
+85,171,firsthalf,One Contrast,0.8571428571428571,0.42857142857142855,7,0,0
+85,171,secondhalf,Two Contrasts Shared,0.75,0.375,16,0,0
+85,171,secondhalf,Two Contrasts Privileged,0.75,0.375,8,0,0
+85,171,secondhalf,One Contrast,0.8888888888888888,0.5555555555555556,9,0,0
+86,172,firsthalf,Two Contrasts Shared,0.42857142857142855,0.2857142857142857,14,0,0
+86,172,firsthalf,Two Contrasts Privileged,0.6,0.6,5,0,0
+86,172,firsthalf,One Contrast,0.5,0.6666666666666666,6,0,0
+86,172,secondhalf,Two Contrasts Shared,0.26666666666666666,0.2,15,0,0
+86,172,secondhalf,Two Contrasts Privileged,0.2857142857142857,0.7142857142857143,7,0,0
+86,172,secondhalf,One Contrast,0.5714285714285714,0.2857142857142857,7,0,0
+86,173,firsthalf,Two Contrasts Shared,0.7272727272727273,0.2727272727272727,11,0,0
+86,173,firsthalf,Two Contrasts Privileged,0.7142857142857143,0.7142857142857143,7,0,0
+86,173,firsthalf,One Contrast,0.8571428571428571,0.14285714285714285,7,0,0
+86,173,secondhalf,Two Contrasts Shared,0.8461538461538461,0.38461538461538464,13,0,0
+86,173,secondhalf,Two Contrasts Privileged,0.875,0.625,8,0,0
+86,173,secondhalf,One Contrast,0.8888888888888888,0.2222222222222222,9,0,0
+87,184,firsthalf,Two Contrasts Shared,0.7692307692307693,0.5384615384615384,13,0,0
+87,184,firsthalf,Two Contrasts Privileged,0.7142857142857143,0.14285714285714285,7,0,0
+87,184,firsthalf,One Contrast,0.7142857142857143,0.14285714285714285,7,0,0
+87,184,secondhalf,Two Contrasts Shared,0.7857142857142857,0.5,14,0,0
+87,184,secondhalf,Two Contrasts Privileged,0.75,0.125,8,0,0
+87,184,secondhalf,One Contrast,0.8888888888888888,0.2222222222222222,9,0,0
+87,185,firsthalf,Two Contrasts Shared,0.6153846153846154,0.6153846153846154,13,0,0
+87,185,firsthalf,Two Contrasts Privileged,0.8333333333333334,0.3333333333333333,6,0,0
+87,185,firsthalf,One Contrast,0.3333333333333333,0.5,6,0,0
+87,185,secondhalf,Two Contrasts Shared,0.9333333333333333,0.4,15,0,0
+87,185,secondhalf,Two Contrasts Privileged,1,0.75,8,0,0
+87,185,secondhalf,One Contrast,0.75,0.25,8,0,0
+88,176,firsthalf,Two Contrasts Shared,0.8333333333333334,0.3333333333333333,12,0,0
+88,176,firsthalf,Two Contrasts Privileged,1,0.5,6,0,0
+88,176,firsthalf,One Contrast,0.8333333333333334,0,6,0,0
+88,176,secondhalf,Two Contrasts Shared,0.6153846153846154,0.38461538461538464,13,0,0
+88,176,secondhalf,Two Contrasts Privileged,1,0.2857142857142857,7,0,0
+88,176,secondhalf,One Contrast,0.5714285714285714,0.14285714285714285,7,0,0
+88,177,firsthalf,Two Contrasts Shared,0.75,0.4166666666666667,12,0,0
+88,177,firsthalf,Two Contrasts Privileged,0.8333333333333334,0.8333333333333334,6,0,0
+88,177,firsthalf,One Contrast,1,0.25,4,0,0
+88,177,secondhalf,Two Contrasts Shared,0.7142857142857143,0.42857142857142855,14,0,0
+88,177,secondhalf,Two Contrasts Privileged,0.7142857142857143,0.5714285714285714,7,0,0
+88,177,secondhalf,One Contrast,0.8,0.4,5,0,0
+89,178,firsthalf,Two Contrasts Shared,0.8333333333333334,0.5,12,0,0
+89,178,firsthalf,Two Contrasts Privileged,0.8333333333333334,0.6666666666666666,6,0,0
+89,178,firsthalf,One Contrast,1,0,7,0,0
+89,178,secondhalf,Two Contrasts Shared,0.5714285714285714,0.5,14,0,0
+89,178,secondhalf,Two Contrasts Privileged,0.8571428571428571,0.14285714285714285,7,0,0
+89,178,secondhalf,One Contrast,0.875,0.125,8,0,0
+89,179,firsthalf,Two Contrasts Shared,0.875,0.25,8,0,0
+89,179,firsthalf,Two Contrasts Privileged,1,0.75,4,0,0
+89,179,firsthalf,One Contrast,1,0.5,6,0,0
+89,179,secondhalf,Two Contrasts Shared,1,0.4444444444444444,9,0,0
+89,179,secondhalf,Two Contrasts Privileged,1,0.5,6,0,0
+89,179,secondhalf,One Contrast,1,0.125,8,0,0
+90,180,firsthalf,Two Contrasts Shared,0.75,0.75,12,0,0
+90,180,firsthalf,Two Contrasts Privileged,0.8571428571428571,0.7142857142857143,7,0,0
+90,180,firsthalf,One Contrast,1,0.16666666666666666,6,0,0
+90,180,secondhalf,Two Contrasts Shared,0.7857142857142857,0.35714285714285715,14,0,0
+90,180,secondhalf,Two Contrasts Privileged,0.75,0.625,8,0,0
+90,180,secondhalf,One Contrast,0.875,0.125,8,0,0
+90,181,firsthalf,Two Contrasts Shared,0.9285714285714286,0.42857142857142855,14,0,0
+90,181,firsthalf,Two Contrasts Privileged,1,0.3333333333333333,6,0,0
+90,181,firsthalf,One Contrast,0.6,0.6,5,0,0
+90,181,secondhalf,Two Contrasts Shared,0.75,0.4375,16,0,0
+90,181,secondhalf,Two Contrasts Privileged,0.5,0.375,8,0,0
+90,181,secondhalf,One Contrast,0.5714285714285714,0,7,0,0
