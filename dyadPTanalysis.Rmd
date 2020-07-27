@@ -1,0 +1,619 @@
+---
+title: "Dyad Perspective-taking - CogSci 2020"
+author: "Rachel Ryskin"
+output:
+  html_document:
+    df_print: paged
+    number_sections: true
+---
+
+```{r setup, include=FALSE, cache=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE)
+library(tidyverse)
+library(rlang)
+scale_colour_discrete <- function(...) {
+  scale_colour_brewer(..., palette="Dark2")
+}
+scale_color_discrete <- function(...) {
+  scale_colour_brewer(..., palette="Dark2")
+}
+
+source('dyadPTfunctions.R') # sourcing model and helper functions
+```
+
+# Data from Ryskin et al. (2015), R15
+
+```{r}
+avg_by_subj_prod = read_csv("data/DyadPT_avg_prod.csv")
+avg_by_subj_by_bin_prod = read_csv("data/DyadPT_avg_prod_by_bin.csv")
+avg_by_subj_by_half_prod = read_csv("data/DyadPT_avg_prod_by_half.csv")
+avg_by_subj_comp = read_csv("data/DyadPT_avg_comp_adj_and_noun.csv")
+avg_by_subj_by_bin_comp = read_csv("data/DyadPT_avg_comp_adj_and_noun_by_bin.csv")
+avg_by_subj_by_half_comp = read_csv("data/DyadPT_avg_comp_adj_and_noun_by_half.csv")
+
+partners1 = avg_by_subj_prod %>% select(pair, speaker) %>% unique() %>% arrange(pair, speaker) %>% mutate(ones=1) %>% group_by(pair) %>% mutate(ct=cumsum(ones)) 
+partners2 = avg_by_subj_prod %>% select(pair, speaker) %>% unique() %>% arrange(pair, desc(speaker)) %>% mutate(ones=1) %>% group_by(pair) %>% mutate(ct=cumsum(ones)) 
+partners = partners1 %>% full_join(partners2, by=c("pair"="pair", "ct"="ct")) %>% rename(subj=speaker.x, partner=speaker.y)
+
+```
+
+## Production data
+
+Average proportion of size adjective use in R15:
+
+```{r}
+avg_by_subj_prod %>% group_by(condition) %>% summarize(mean(prop_size_adj_use))
+```
+
+
+### Individual speaker alpha values
+
+
+```{r}
+
+solve_for_alpha=function(mixed, speaker, addressee){
+  (mixed-addressee)/(speaker-addressee)
+}
+
+prod_indiv_alpha = avg_by_subj_prod %>% 
+  rename(subject = speaker) %>% 
+  mutate(condition = recode(condition, "One Contrast Privileged"="mixed","Two Contrasts Shared"="speaker","No Contrast"="addressee"),
+         subject = as.character(subject)) %>% 
+  select(pair, subject,condition, prop_size_adj_use) %>% 
+  pivot_wider(names_from= condition, values_from = prop_size_adj_use) %>% 
+  mutate(alpha = solve_for_alpha(mixed, speaker, addressee))
+  
+```
+
+Most people weight the speaker's perspective more than the addressee's (average alpha= `r mean(prod_indiv_alpha$alpha)` ) but some are improper (less than 0 or more than 1)
+
+##### Improper alphas
+
+```{r}
+list_of_improper_alphas = prod_indiv_alpha %>% filter(!between(alpha, 0,1)) %>% select(pair, subject, alpha)
+list_of_improper_alphas$subject
+```
+
+Distribution of alphas excluding 18 subjects who have impossible alphas
+
+```{r}
+alpha_distrib<-ggplot(prod_indiv_alpha %>% filter(between(alpha, 0,1)))+
+  geom_histogram(aes(x=alpha), color="black")+
+  labs(x=expression(alpha[italic(s)]))+
+  theme_bw(base_size=25)+theme(axis.text.x = element_text(size = 22))
+```
+
+### Dyad
+
+Is there a relationship betwen alphas within the dyad?
+
+```{r}
+prod_indiv_alpha_dyad = prod_indiv_alpha %>% 
+  filter(between(alpha, 0,1)) %>% 
+  select(pair, alpha) %>% 
+  group_by(pair) %>% 
+  mutate(ct = row_number()) %>% 
+  pivot_wider(names_from = ct, names_prefix = "alpha_p", values_from = alpha)
+```
+
+partner1 vs partner2 alpha: 
+(partners randomly assigned to 1 or 2)
+
+```{r}
+bootcorci::corci(prod_indiv_alpha_dyad$alpha_p1, prod_indiv_alpha_dyad$alpha_p2, saveboot = F)
+```
+
+## Over the course of the experiment
+
+#### by half
+
+```{r}
+avg_by_subj_by_half_prod %>% 
+  group_by(crit_half, condition) %>% 
+  summarize(mean(prop_size_adj_use)) %>% 
+  print()
+```
+
+first vs second half alpha
+
+```{r}
+first_half_alpha = solve_for_alpha(mixed=0.74, speaker=0.98, addressee = 0.08) %>% print()
+second_half_alpha = solve_for_alpha(mixed=0.59, speaker=0.98, addressee = 0.07) %>% print()
+```
+
+
+```{r}
+prod_indiv_alpha_by_half = avg_by_subj_by_half_prod %>% 
+  rename(subject = speaker) %>% 
+  mutate(condition = recode(condition, "One Contrast Privileged"="mixed","Two Contrasts Shared"="speaker","No Contrast"="addressee"),
+         subject = as.character(subject)) %>% 
+  select(pair, subject, crit_half, condition, prop_size_adj_use) %>% 
+  pivot_wider(names_from= condition, values_from = prop_size_adj_use) %>% 
+  mutate(alpha = solve_for_alpha(mixed, speaker, addressee))
+```
+
+
+#### T-Test
+
+```{r}
+with(prod_indiv_alpha_by_half %>% 
+       filter(between(alpha, 0,1)) %>% 
+       select(subject, alpha, crit_half) %>% 
+         pivot_wider( names_from = crit_half, values_from = alpha), t.test(firsthalf, secondhalf, paired=TRUE))
+```
+
+
+
+# Comprehension: Object probabilities given RE = "big..."
+
+$P(obj \mid RE) \propto \sum_{d \in D}P(RE \mid obj,d)P(obj \mid d)P(d)$
+
+Computing target and competitor probabilities basedd on production data.
+
+Each listener hears:
+
+Fillers = 48 bare noun phrases (p(big)=0.08)
+
+-No Contrast = 16 bare noun phrases (p(big)=0.08)
+
+-One Contrast Privileged = 16 bare noun phrases (p(big)=0.66)
+
+One Contrast Shared = 16 adj+noun (p(big)=0.98)
+
+Two Contrasts Privileged = 16 adj+ noun phrases (p(big)=0.98)
+
+Two Contrasts Shared = 32 adj+ noun phrases (p(big)=0.98)
+
+People learn about the rates of adjectives from both the singleton trials and the privileged production trials so maybe single_prob should be average of the two $(64*0.08+16*0.66)/80 = 0.196$ and then unknown_prob is $0.25*0.98 + 0.25*0.000 + 0.5*0.196 = 0.343$ (computed by the function)
+
+
+```{r}
+all_obj_props= object_probs(prob_hidden = 0.05, num_objects=8 )
+all_RE_props_new = RE_probs(targ_prob=0.98, targ_pair_prob=0, single_prob = 0.196) 
+```
+
+
+```{r}
+grid = crossing(
+    condition = c("2shared","2priv","1shared"), 
+    alpha = seq(from=0, to=1, by = 0.1)
+    ) 
+
+grid$target_props = map2_dbl(.x=grid$alpha, .y=grid$condition, p_obj_given_RE, object="targ", all_obj_props, all_RE_props_new)
+grid$compet_props = map2_dbl(.x=grid$alpha, .y=grid$condition, p_obj_given_RE, object="compet", all_obj_props, all_RE_props_new)
+```
+
+```{r}
+grid_long = gather(grid, key = "loc", value = "props", -alpha, -condition)
+```
+
+#### Prediction graph
+
+```{r}
+x_label = latex2exp::TeX("$\\alpha_{ \u2113 }$")
+
+ggplot(grid_long)+
+  geom_line(aes(x=alpha,y=props, color = condition, linetype = loc), size=2)+
+  scale_color_discrete(name="Condition", limits = c('1shared','2priv', '2shared'), labels = c("One Contrast - Shared", "Two Contrasts - Privileged",  "Two Contrasts - Shared"))+
+  scale_linetype_discrete(limits = c('target_props','compet_props'), name = "Object", labels = c("Target (big banana)", "Competitor (big balloon)"))+
+  coord_cartesian(ylim=c(0,1))+
+  labs(y = "P( obj | RE)", x=unname(x_label))+
+    theme_bw(base_size=20)+theme(legend.key.width = unit(2,"cm"))
+```
+
+## Comparing predictons to actual target looks (average $alpha_{s}$; identity link)
+
+which value of alpha minimizes mean squared error between predicted target/competitor proportions and the actual data
+
+targ_prop = 0.98, single_prop=0.196, alpha = varies between 0 and 1
+
+#### optimal alpha for good dyads only 
+```{r}
+sd(avg_by_subj_comp$prop_target_fix)
+outlier_cutoff=mean(avg_by_subj_comp$prop_target_fix) - 3*sd(avg_by_subj_comp$prop_target_fix)
+outlierC_cutoff=mean(avg_by_subj_comp$prop_compet_fix) + 3*sd(avg_by_subj_comp$prop_compet_fix)
+```
+
+```{r}
+avg_by_subj_comp_good_dyads = avg_by_subj_comp %>% filter(!pair %in% list_of_improper_alphas$pair)
+```
+
+```{r, eval=F}
+alpha_grid = seq(0,1,by=0.01)
+
+model_fits_avg_props_good_dyads = map_dfr(
+  alpha_grid, 
+  get_fit_to_data, 
+  data=avg_by_subj_comp_good_dyads, 
+  count_priv=TRUE, outlier_cutoff=outlier_cutoff)
+
+min_model_fits_avg_props_good_dyads=model_fits_avg_props_good_dyads %>% top_n(n = -1)
+```
+
+
+```{r}
+
+model_preds_alpha_027_avg_probs_good_dyads = map_dfr(avg_by_subj_comp_good_dyads$listener %>% unique(),
+                                                 subj_estimates_given_alpha, 
+                                                 alpha_source=0.27, 
+                                                 partners=partners, 
+                                                 avg_by_subj_prod=avg_by_subj_prod,
+                                                 prod_indiv_alpha=prod_indiv_alpha, 
+                                                 count_priv=TRUE) 
+
+preds_and_data_alpha_027_avg_probs_good_dyads = match_pred_to_emp(
+  model_preds_alpha_027_avg_probs_good_dyads ,
+  data = avg_by_subj_comp_good_dyads) %>% filter(!(locs=='target_props' & empirical_props < outlier_cutoff))
+
+p027<-show_data_over_model_preds(preds_and_data_alpha_027_avg_probs_good_dyads)
+p027<-p027+labs(y="Observed prop.", x = bquote('Predicted prop. ('~alpha["\u2113"]~'= 0.27)' ))
+p027
+```
+
+```{r}
+lm_preds_and_data_alpha_027_avg_probs_good_dyads = lm(empirical_props ~ predicted_props, data = preds_and_data_alpha_027_avg_probs_good_dyads)
+summary(lm_preds_and_data_alpha_027_avg_probs_good_dyads)
+```
+
+#### first half (good dyads)
+
+```{r}
+list_of_improper_alphas_first_half = prod_indiv_alpha_by_half %>% filter(crit_half=="firsthalf" & !between(alpha, 0,1)) %>% select(pair, subject, alpha)
+list_of_improper_alphas_first_half$subject
+```
+
+```{r}
+list_of_improper_alphas_second_half = prod_indiv_alpha_by_half %>% filter(crit_half=="secondhalf" & !between(alpha, 0,1)) %>% select(pair, subject, alpha)
+list_of_improper_alphas_second_half$subject
+```
+
+```{r}
+avg_by_subj_comp_first_half_good_dyads = avg_by_subj_by_half_comp %>% filter(crit_half=="firsthalf") %>% filter(!pair %in% list_of_improper_alphas_first_half$pair)
+```
+
+```{r, eval=F}
+model_fits_avg_props_first_half_good_dyads = map_dfr(alpha_grid, get_fit_to_data, 
+                                          data=avg_by_subj_comp_first_half_good_dyads ,
+                                          count_priv=TRUE, outlier_cutoff=outlier_cutoff)
+
+min_model_fits_avg_props_first_half_good_dyads=model_fits_avg_props_first_half_good_dyads %>% top_n(n = -1)
+
+```
+
+```{r}
+model_preds_alpha_043_avg_probs_first_half_good_dyads = map_dfr(avg_by_subj_comp_first_half_good_dyads$listener %>% unique(),
+                                                 subj_estimates_given_alpha, 
+                                                 alpha_source=0.43, 
+                                                 partners=partners, 
+                                                 avg_by_subj_prod=avg_by_subj_prod,
+                                                 prod_indiv_alpha=prod_indiv_alpha, 
+                                                 count_priv=TRUE) 
+
+preds_and_data_alpha_043_avg_probs_first_half_good_dyads = match_pred_to_emp(
+  model_preds_alpha_043_avg_probs_first_half_good_dyads , 
+  data = avg_by_subj_comp_first_half_good_dyads ) %>% 
+  filter(!(locs=='target_props' & empirical_props<outlier_cutoff))
+
+show_data_over_model_preds(preds_and_data_alpha_043_avg_probs_first_half_good_dyads)
+```
+```{r}
+lm_preds_and_data_alpha_043_avg_probs_first_half_good_dyads = lm(empirical_props ~ predicted_props, data = preds_and_data_alpha_043_avg_probs_first_half_good_dyads)
+summary(lm_preds_and_data_alpha_043_avg_probs_first_half_good_dyads)
+```
+
+### second half
+
+```{r}
+avg_by_subj_comp_second_half_good_dyads = avg_by_subj_by_half_comp %>% filter(crit_half=="secondhalf") %>% filter(!pair %in% list_of_improper_alphas_second_half$pair)
+```
+
+
+```{r, eval=F}
+model_fits_avg_props_second_half_good_dyads = map_dfr(alpha_grid, get_fit_to_data, 
+                                          data=avg_by_subj_comp_second_half_good_dyads ,
+                                          count_priv=TRUE, outlier_cutoff=outlier_cutoff)
+
+min_model_fits_avg_props_second_half_good_dyads=model_fits_avg_props_second_half_good_dyads %>% top_n(n = -1)
+```
+
+```{r}
+model_preds_alpha_020_avg_probs_second_half_good_dyads = map_dfr(avg_by_subj_comp_second_half_good_dyads$listener %>% unique(),
+                                                 subj_estimates_given_alpha, 
+                                                 alpha_source=0.20, 
+                                                 partners=partners, 
+                                                 avg_by_subj_prod=avg_by_subj_prod,
+                                                 prod_indiv_alpha=prod_indiv_alpha, 
+                                                 count_priv=TRUE) 
+
+preds_and_data_alpha_020_avg_probs_second_half_good_dyads = match_pred_to_emp(
+  model_preds_alpha_020_avg_probs_second_half_good_dyads , 
+  data = avg_by_subj_comp_second_half_good_dyads ) %>% 
+  filter(!(locs=='target_props' & empirical_props<outlier_cutoff))
+
+show_data_over_model_preds(preds_and_data_alpha_020_avg_probs_second_half_good_dyads)
+```
+
+```{r}
+lm_preds_and_data_alpha_020_avg_probs_second_half_good_dyads = lm(empirical_props ~ predicted_props, data = preds_and_data_alpha_020_avg_probs_second_half_good_dyads)
+summary(lm_preds_and_data_alpha_020_avg_probs_second_half_good_dyads)
+```
+
+### alpha = 0.16 (which is the optimal value for partner-specific stuff below)
+
+```{r}
+model_preds_alpha_016_avg_probs_good_dyads = map_dfr(avg_by_subj_comp_good_dyads$listener %>% unique(),
+                                                 subj_estimates_given_alpha, 
+                                                 alpha_source=0.16, 
+                                                 partners=partners, 
+                                                 avg_by_subj_prod=avg_by_subj_prod,
+                                                 prod_indiv_alpha=prod_indiv_alpha, 
+                                                 count_priv=TRUE) 
+
+preds_and_data_alpha_016_avg_probs_good_dyads = match_pred_to_emp(
+  model_preds_alpha_016_avg_probs_good_dyads ,
+  data = avg_by_subj_comp_good_dyads) %>% filter(!(locs=='target_props' & empirical_props < outlier_cutoff))
+
+show_data_over_model_preds(preds_and_data_alpha_016_avg_probs_good_dyads)
+
+```
+
+```{r}
+lm_preds_and_data_alpha_016_avg_probs_good_dyads = lm(empirical_props ~ predicted_props, data = preds_and_data_alpha_016_avg_probs_good_dyads)
+summary(lm_preds_and_data_alpha_016_avg_probs_good_dyads)
+```
+
+### alpha = 0.64 (which is the optimal value for alpha_s)
+
+```{r}
+model_preds_alpha_064_avg_probs_good_dyads = map_dfr(avg_by_subj_comp_good_dyads$listener %>% unique(),
+                                                 subj_estimates_given_alpha, 
+                                                 alpha_source=0.64, 
+                                                 partners=partners, 
+                                                 avg_by_subj_prod=avg_by_subj_prod,
+                                                 prod_indiv_alpha=prod_indiv_alpha, 
+                                                 count_priv=TRUE) 
+
+preds_and_data_alpha_064_avg_probs_good_dyads = match_pred_to_emp(
+  model_preds_alpha_064_avg_probs_good_dyads ,
+  data = avg_by_subj_comp_good_dyads)%>% filter(!(locs=='target_props' & empirical_props < outlier_cutoff))
+
+p064<-show_data_over_model_preds(preds_and_data_alpha_064_avg_probs_good_dyads)
+p064<-p064+labs(y="Observed prop.", x = bquote('Predicted prop. ('~alpha["\u2113"]~'= 0.64)' ))
+p064
+```
+
+```{r}
+lm_preds_and_data_alpha_064_avg_probs_good_dyads = lm(empirical_props ~ predicted_props, data = preds_and_data_alpha_064_avg_probs_good_dyads)
+summary(lm_preds_and_data_alpha_064_avg_probs_good_dyads)
+```
+
+#### comparing alpha = 0.27 and alpha= 0.64 (good dyads, avg props)
+
+```{r}
+bayestestR::bayesfactor_models(lm_preds_and_data_alpha_027_avg_probs_good_dyads ,  denominator = lm_preds_and_data_alpha_064_avg_probs_good_dyads )
+```
+
+Strong evidence in favor of the alpha=0.27 model
+
+# Partner-specific production probabilities
+
+## Optimal alpha using partner-specific production probabilities
+
+```{r, eval=F}
+model_fits_dyad_props = map_dfr(alpha_grid, 
+                                get_fit_to_data, 
+                                data=avg_by_subj_comp_good_dyads, 
+                                dyad_props=TRUE,
+                                count_priv=TRUE, outlier_cutoff=outlier_cutoff)
+
+min_model_fits_dyad_props=model_fits_dyad_props %>% top_n(n = -1)
+```
+
+
+```{r}
+model_preds_alpha_016_dyad_probs = map_dfr(avg_by_subj_comp_good_dyads$listener %>% unique(),
+                                                 subj_estimates_given_alpha, 
+                                                 alpha_source=0.16, 
+                                                 partners=partners, 
+                                                 avg_by_subj_prod=avg_by_subj_prod,
+                                                 prod_indiv_alpha=prod_indiv_alpha, 
+                                                 dyad_props=TRUE,
+                                                 count_priv=TRUE) 
+
+preds_and_data_alpha_016_dyad_probs = match_pred_to_emp(model_preds_alpha_016_dyad_probs ,data = avg_by_subj_comp_good_dyads)%>% filter(!(locs=='target_props' & empirical_props < outlier_cutoff))
+
+p016<-show_data_over_model_preds(preds_and_data_alpha_016_dyad_probs)
+p016<-p016+labs(y="Observed prop.", x = bquote('Predicted prop. ('~alpha["\u2113"]~'= 0.16)' ))
+p016
+```
+
+
+
+```{r}
+lm_preds_and_data_alpha_016_dyad_probs = lm(empirical_props ~ predicted_props, data = preds_and_data_alpha_016_dyad_probs)
+summary(lm_preds_and_data_alpha_016_dyad_probs)
+```
+
+## compared to best model for avg production probabilties
+
+```{r}
+bayestestR::bayesfactor_models(lm_preds_and_data_alpha_016_dyad_probs ,  denominator = lm_preds_and_data_alpha_027_avg_probs_good_dyads)
+```
+
+Model with average probabilties is better than the one with partner-specific RE probabilties
+
+## cf. partner-specific props but alpha=0.27 for all 
+
+```{r}
+model_preds_alpha_027_dyad_probs = map_dfr(avg_by_subj_comp_good_dyads$listener %>% unique(),
+                                                 subj_estimates_given_alpha, 
+                                                 alpha_source=0.27, 
+                                                 partners=partners, 
+                                                 avg_by_subj_prod=avg_by_subj_prod,
+                                                 prod_indiv_alpha=prod_indiv_alpha, 
+                                                 dyad_props=TRUE,
+                                                 count_priv=TRUE) 
+
+preds_and_data_alpha_027_dyad_probs = match_pred_to_emp(model_preds_alpha_027_dyad_probs ,data = avg_by_subj_comp_good_dyads)%>% filter(!(locs=='target_props' & empirical_props < outlier_cutoff))
+
+show_data_over_model_preds(preds_and_data_alpha_027_dyad_probs)
+
+```
+
+```{r}
+lm_preds_and_data_alpha_027_dyad_probs = lm(empirical_props ~ predicted_props, data = preds_and_data_alpha_027_dyad_probs)
+summary(lm_preds_and_data_alpha_027_dyad_probs)
+```
+
+#### comparing alpha = 0.27 and alpha= 0.16 with partner-specifc probabilties
+```{r}
+bayestestR::bayesfactor_models(lm_preds_and_data_alpha_016_dyad_probs ,  denominator = lm_preds_and_data_alpha_027_dyad_probs)
+```
+
+Moderate evidence that alpha=0.16 is better than 0.27
+
+## partner-specific props but alpha=0.64 for all 
+
+```{r}
+model_preds_alpha_064_dyad_probs = map_dfr(avg_by_subj_comp_good_dyads$listener %>% unique(),
+                                                 subj_estimates_given_alpha, 
+                                                 alpha_source=0.64, 
+                                                 partners=partners, 
+                                                 avg_by_subj_prod=avg_by_subj_prod,
+                                                 prod_indiv_alpha=prod_indiv_alpha, 
+                                                 dyad_props=TRUE,
+                                                 count_priv=TRUE) 
+
+preds_and_data_alpha_064_dyad_probs = match_pred_to_emp(model_preds_alpha_064_dyad_probs ,data = avg_by_subj_comp_good_dyads)%>% filter(!(locs=='target_props' & empirical_props < outlier_cutoff))
+
+show_data_over_model_preds(preds_and_data_alpha_064_dyad_probs)
+
+```
+
+```{r}
+lm_preds_and_data_alpha_064_dyad_probs = lm(empirical_props ~ predicted_props, data = preds_and_data_alpha_064_dyad_probs)
+summary(lm_preds_and_data_alpha_064_dyad_probs)
+```
+
+#### comparing alpha = 0.64 and alpha= 0.16 with partner-specifc probabilties
+```{r}
+bayestestR::bayesfactor_models(lm_preds_and_data_alpha_016_dyad_probs ,  denominator = lm_preds_and_data_alpha_064_dyad_probs)
+```
+
+alpha=0.16 is better than 0.64
+
+
+# Dyad-specific alphas, average RE props
+
+#### alpha = own (prod)
+
+```{r}
+
+model_preds_alpha_own_avg_probs = map_dfr(avg_by_subj_comp_good_dyads$listener %>% unique(),
+                                                 subj_estimates_given_alpha, 
+                                                 alpha_source="own_prod", 
+                                                 partners=partners, 
+                                                 avg_by_subj_prod=avg_by_subj_prod,
+                                                 prod_indiv_alpha=prod_indiv_alpha, 
+                                                 just_alpha_source=TRUE,
+                                                 count_priv=TRUE) 
+
+preds_and_data_alpha_own_avg_probs = match_pred_to_emp(model_preds_alpha_own_avg_probs ,data = avg_by_subj_comp_good_dyads) %>% filter(!(locs=='target_props' & empirical_props < outlier_cutoff))
+```
+
+```{r}
+lm_preds_and_data_alpha_own_avg_probs = lm(empirical_props ~ predicted_props, 
+                                           data = preds_and_data_alpha_own_avg_probs)
+summary(lm_preds_and_data_alpha_own_avg_probs)
+```
+
+#### alpha = partner (prod)
+
+```{r}
+model_preds_alpha_partner_avg_probs = map_dfr(avg_by_subj_comp_good_dyads$listener %>% unique(),
+                                                 subj_estimates_given_alpha, 
+                                                 alpha_source="partner_prod", 
+                                                 partners=partners, just_alpha_source=T,
+                                                 avg_by_subj_prod=avg_by_subj_prod,
+                                                 prod_indiv_alpha=prod_indiv_alpha, 
+                                                 count_priv=TRUE) 
+
+preds_and_data_alpha_partner_avg_probs = match_pred_to_emp(model_preds_alpha_partner_avg_probs ,data = avg_by_subj_comp_good_dyads)%>% filter(!(locs=='target_props' & empirical_props < outlier_cutoff))
+```
+
+```{r}
+lm_preds_and_data_alpha_partner_avg_probs = lm(empirical_props ~ predicted_props, data = preds_and_data_alpha_partner_avg_probs)
+summary(lm_preds_and_data_alpha_partner_avg_probs)
+```
+
+
+
+#### alpha = own (addr)
+
+1-$\alpha$
+
+```{r}
+model_preds_alpha_inv_own_avg_probs = map_dfr(avg_by_subj_comp_good_dyads$listener %>% unique(),
+                                                 subj_estimates_given_alpha, 
+                                                 alpha_source="inverse_own_prod", 
+                                                 partners=partners, just_alpha_source=T,
+                                                 avg_by_subj_prod=avg_by_subj_prod,
+                                                 prod_indiv_alpha=prod_indiv_alpha, 
+                                                 count_priv=TRUE) 
+
+preds_and_data_alpha_inv_own_avg_probs = match_pred_to_emp(model_preds_alpha_inv_own_avg_probs ,data = avg_by_subj_comp_good_dyads)%>% filter(!(locs=='target_props' & empirical_props < outlier_cutoff))
+```
+
+```{r}
+lm_preds_and_data_alpha_inv_own_avg_probs = lm(empirical_props ~ predicted_props, data = preds_and_data_alpha_inv_own_avg_probs)
+summary(lm_preds_and_data_alpha_inv_own_avg_probs)
+```
+
+
+#### alpha = partner(addr)
+
+```{r}
+model_preds_alpha_inv_partner_avg_probs = map_dfr(avg_by_subj_comp_good_dyads$listener %>% unique(),
+                                                 subj_estimates_given_alpha, 
+                                                 alpha_source="inverse_partner_prod", 
+                                                 partners=partners, just_alpha_source=T,
+                                                 avg_by_subj_prod=avg_by_subj_prod,
+                                                 prod_indiv_alpha=prod_indiv_alpha, 
+                                                 count_priv=TRUE) 
+
+preds_and_data_alpha_inv_partner_avg_probs = match_pred_to_emp(model_preds_alpha_inv_partner_avg_probs ,data = avg_by_subj_comp_good_dyads)%>% filter(!(locs=='target_props' & empirical_props < outlier_cutoff))
+
+p_inv_partner<-show_data_over_model_preds(preds_and_data_alpha_inv_partner_avg_probs)
+p_inv_partner<-p_inv_partner+labs(y="Observed prop.", x = bquote('Predicted ('~alpha["\u2113"]~"=1-partner"~alpha[s]~')' ))
+p_inv_partner
+```
+
+```{r}
+lm_preds_and_data_alpha_inv_partner_avg_probs = lm(empirical_props ~ predicted_props, data = preds_and_data_alpha_inv_partner_avg_probs)
+summary(lm_preds_and_data_alpha_inv_partner_avg_probs)
+```
+
+
+## comparing models
+
+comparing all 4 above to alpha=0.27 with average RE props
+
+```{r}
+bayestestR::bayesfactor_models(lm_preds_and_data_alpha_own_avg_probs, 
+                               lm_preds_and_data_alpha_partner_avg_probs,
+                               lm_preds_and_data_alpha_inv_own_avg_probs,
+                               lm_preds_and_data_alpha_inv_partner_avg_probs,
+                               denominator = lm_preds_and_data_alpha_027_avg_probs_good_dyads)
+```
+
+They are all much worse fits than the optimal alpha=0.27 for avg probs
+
+
+Compare the other 3 to the inverse partner alpha:
+seems like it's the best one out of these 4
+```{r}
+bayestestR::bayesfactor_models(lm_preds_and_data_alpha_own_avg_probs, 
+                               lm_preds_and_data_alpha_partner_avg_probs,
+                               lm_preds_and_data_alpha_inv_own_avg_probs,
+                               denominator = lm_preds_and_data_alpha_inv_partner_avg_probs)
+```
