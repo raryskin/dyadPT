@@ -1,2 +1,2 @@
 # dyadPT
-code for Ryskin, Stevenson, &amp; Heller - CogSci2020
+data & code for Ryskin, Stevenson, &amp; Heller - CogSci2020
